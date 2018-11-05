@@ -1,0 +1,185 @@
+/*@import 'extra-small-mobile-direct-message';*/
+@import 'variables';
+@font-face {
+    font-family: 'Segoe UI Light';
+    src: url('../fonts/segoi-ui/segoeuil.eot');
+    src: url('../fonts/segoi-ui/segoeuil.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/segoi-ui/segoeuil.woff') format('woff');
+    font-weight: normal;
+}
+@import 'icons';
+//all panels
+//@import 'second_box';
+
+
+* {
+    //color: $main-color;
+    font-family: 'Segoe UI Light';
+}
+
+body {
+    overflow-x: hidden;
+
+    .container-fluid {
+        max-width: 1920px;
+    }
+}
+//
+//@media (max-width: $extra-sm-mobile) {
+//    @import 'extra-small-mobile/main_mobile';
+//}
+//
+//@media (min-width: $land-mobile-start) and (max-width: $land-mobile-end) {
+//    @import 'big-mobile/main_mobile';
+//}
+//
+//@media (min-width: $tablet-start) and (max-width: $tablet-end) {
+//    @import 'tablets/main-tablet';
+// }
+//
+//@media (min-width: $desctop-start) and (max-width: 1419.98px){
+//    @import 'desctop/main-desctop';
+//}
+//
+//@media (min-width: 1420px) {
+//    @import 'desctop-1920/main-desctop';
+//}
+header {
+    height: 72px;
+}
+
+.menu {
+    display: inline-block;
+    margin: -8px -18px;
+    position: absolute;
+    top: 12px;
+
+    @media (min-width: $desctop-start) and (max-width: 1419.98px){
+        .nav-item:first-child {
+            &:first-child{
+                .nav-link {
+                    font-size: 9px;
+                    padding: 0 24px 0 0px;
+                    letter-spacing: 0.3px;
+                }
+            }
+
+            &:nth-child(2) {
+                .nav-link {
+                    font-size: 9px;
+                    padding: 0 21px 0 0px;
+                    letter-spacing: 0.1px;
+                }
+            }
+
+        }
+    }
+
+
+    .nav-item {
+        text-transform: uppercase;
+
+        .nav-link {
+            font-size: 12px;
+            padding: 0 29px 0 0px;
+            color: $main-color-second;
+        }
+    }
+}
+
+.slider-panel {
+    width: 100.7%;
+
+    .carousel-caption {
+        width: 293px;
+        background: rgba(0, 0, 0, 0.4);
+        margin: 0 13px;
+        padding: 19px 22px;
+
+        right: 0;
+        left: auto;
+        top: 22px;
+
+        .pre-title {
+            font-size: 9px;
+            text-transform: uppercase;
+            text-align: right;
+            margin: 0 3px;
+        }
+
+        .carousel-title {
+            font-size: 26px;
+            text-transform: uppercase;
+            text-align: right;
+            margin-top: -6px;
+            margin-right: 2px;
+            margin-bottom: 16px;
+        }
+
+        .carousel-text {
+            font-size: 8px;
+            line-height: 8px;
+            letter-spacing: 0.12px;
+            margin-bottom: 7px;
+        }
+
+        .know-more {
+            position: absolute;
+            bottom: 3px;
+
+            a {
+                text-decoration: underline;
+                font-size: 9px;
+                color: $main-color-first;
+                letter-spacing: 1px;
+            }
+        }
+
+        p {
+            font-size: 8px;
+            text-align: start;
+        }
+    }
+}
+
+
+.footer-panel {
+
+}
+
+.logo {
+    display: inline-block;
+
+    @media (min-width: $desctop-start) and (max-width: 1419.98px){
+        .navbar-brand {
+            margin-right: -60px;
+            img {
+                width: 49.7%;
+                height: 47px;
+                margin-top: 4px;
+                margin-left: 9px;
+            }
+        }
+
+    }
+
+    @media (min-width: 1420px) {
+        img {
+            width: 65%;
+            height: 47px;
+            margin-top: 4px;
+            margin-left: 12px;
+        }
+    }
+
+    .navbar-brand {
+        margin-right: -60px;
+
+        img {
+            width: 49.7%;
+            height: 47px;
+            margin-top: 4px;
+            margin-left: 9px;
+        }
+    }
+}

@@ -1,0 +1,143 @@
+/*@import 'extra-small-mobile-direct-message';*/
+@font-face {
+  font-family: 'Segoe UI Light';
+  src: url("../fonts/segoi-ui/segoeuil.eot");
+  src: url("../fonts/segoi-ui/segoeuil.eot?#iefix") format("embedded-opentype"), url("../fonts/segoi-ui/segoeuil.woff") format("woff");
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'icon';
+  src: url("../fonts/icons/icons.eot?9re3qw");
+  src: url("../fonts/icons/icons.eot?9re3qw#iefix") format("embedded-opentype"), url("../fonts/icons/icons.ttf?9re3qw") format("truetype"), url("../fonts/icons/icons.woff?9re3qw") format("woff"), url("../fonts/icons/icons.svg?9re3qw#icon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 1.4rem;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-instagram:before {
+  content: "\ea92"; }
+
+.icon-youtube:before {
+  content: "\ea9d"; }
+
+.icon-youtube2:before {
+  content: "\ea9e"; }
+
+.icon-behance:before {
+  content: "\eaa8"; }
+
+.icon-behance2:before {
+  content: "\eaa9"; }
+
+.icon-pinterest:before {
+  content: "\ead1"; }
+
+.icon-pinterest2:before {
+  content: "\ead2"; }
+
+* {
+  font-family: 'Segoe UI Light'; }
+
+body {
+  overflow-x: hidden; }
+  body .container-fluid {
+    max-width: 1920px; }
+
+header {
+  height: 72px; }
+
+.menu {
+  display: inline-block;
+  margin: -8px -18px;
+  position: absolute;
+  top: 12px; }
+  @media (min-width: 972px) and (max-width: 1419.98px) {
+    .menu .nav-item:first-child:first-child .nav-link {
+      font-size: 9px;
+      padding: 0 24px 0 0px;
+      letter-spacing: 0.3px; }
+    .menu .nav-item:first-child:nth-child(2) .nav-link {
+      font-size: 9px;
+      padding: 0 21px 0 0px;
+      letter-spacing: 0.1px; } }
+  .menu .nav-item {
+    text-transform: uppercase; }
+    .menu .nav-item .nav-link {
+      font-size: 12px;
+      padding: 0 29px 0 0px;
+      color: #353534; }
+
+.slider-panel {
+  width: 100.7%; }
+  .slider-panel .carousel-caption {
+    width: 293px;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0 13px;
+    padding: 19px 22px;
+    right: 0;
+    left: auto;
+    top: 22px; }
+    .slider-panel .carousel-caption .pre-title {
+      font-size: 9px;
+      text-transform: uppercase;
+      text-align: right;
+      margin: 0 3px; }
+    .slider-panel .carousel-caption .carousel-title {
+      font-size: 26px;
+      text-transform: uppercase;
+      text-align: right;
+      margin-top: -6px;
+      margin-right: 2px;
+      margin-bottom: 16px; }
+    .slider-panel .carousel-caption .carousel-text {
+      font-size: 8px;
+      line-height: 8px;
+      letter-spacing: 0.12px;
+      margin-bottom: 7px; }
+    .slider-panel .carousel-caption .know-more {
+      position: absolute;
+      bottom: 3px; }
+      .slider-panel .carousel-caption .know-more a {
+        text-decoration: underline;
+        font-size: 9px;
+        color: #fff;
+        letter-spacing: 1px; }
+    .slider-panel .carousel-caption p {
+      font-size: 8px;
+      text-align: start; }
+
+.logo {
+  display: inline-block; }
+  @media (min-width: 972px) and (max-width: 1419.98px) {
+    .logo .navbar-brand {
+      margin-right: -60px; }
+      .logo .navbar-brand img {
+        width: 49.7%;
+        height: 47px;
+        margin-top: 4px;
+        margin-left: 9px; } }
+  @media (min-width: 1420px) {
+    .logo img {
+      width: 65%;
+      height: 47px;
+      margin-top: 4px;
+      margin-left: 12px; } }
+  .logo .navbar-brand {
+    margin-right: -60px; }
+    .logo .navbar-brand img {
+      width: 49.7%;
+      height: 47px;
+      margin-top: 4px;
+      margin-left: 9px; }
