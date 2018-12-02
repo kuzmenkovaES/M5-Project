@@ -1003,44 +1003,40 @@ header {
         }
 
         .menu-circle-item-small {
-            margin-top: -57px;
+            margin-top: -26px;
             position: relative;
-            margin-right: 7px;
-
-            &:first-child {
-                margin-left: 90px;
-            }
 
             img {
-                width: 71%;
+                width: 75%;
             }
 
             .rounded-circle-item {
-                &.rounded-circle.text {
-                    border: 1px solid $main-color-first;
-                    width: 110px;
-                    height: 110px;
-                }
-
-                .rounded-circle-text {
-                    font-size: 85px;
-                    color: $main-color-first;
-                }
+                width: 90px;
+                height: 80px;
+                margin-right: 0;
             }
 
             .menu-circle-text {
                 position: absolute;
                 font-weight: 500;
+                font-size: 11px;
+                line-height: 13px;
 
                 &.one-line {
-                    bottom: -45px;
+                    bottom: -22px;
                     width: 100%;
                 }
                 &.two-line {
-                    bottom: -64px;
-                    font-size: 15px;
+                    bottom: -35px;
                     letter-spacing: 0.1px;
-                    width: 100%;
+                    width: 101%;
+                }
+            }
+
+            &:last-child {
+                .menu-circle-text {
+                    width: 130%;
+                    left: -8px;
                 }
             }
         }
@@ -1087,44 +1083,42 @@ header {
         }
 
         .menu-circle-item-small {
-            margin-top: -57px;
+            margin-top: -39px;
             position: relative;
-            margin-right: 7px;
-
-            &:first-child {
-                margin-left: 90px;
-            }
 
             img {
-                width: 71%;
+                width: 75%;
             }
 
             .rounded-circle-item {
-                &.rounded-circle.text {
-                    border: 1px solid $main-color-first;
-                    width: 110px;
-                    height: 110px;
-                }
-
-                .rounded-circle-text {
-                    font-size: 85px;
-                    color: $main-color-first;
-                }
+                width: 110px;
+                height: 110px;
+                margin-right: 0;
             }
 
             .menu-circle-text {
                 position: absolute;
                 font-weight: 500;
+                font-size: 11px;
+                line-height: 13px;
 
                 &.one-line {
-                    bottom: -45px;
-                    width: 100%;
+                    bottom: -15px;
+                    font-size: 14px;
+                    width: 101%;
                 }
                 &.two-line {
-                    bottom: -64px;
-                    font-size: 15px;
+                    bottom: -27px;
+                    font-size: 14px;
                     letter-spacing: 0.1px;
-                    width: 100%;
+                    width: 101%;
+                }
+            }
+
+            &:last-child {
+                .menu-circle-text {
+                    width: 130%;
+                    left: -8px;
                 }
             }
         }
@@ -1170,44 +1164,42 @@ header {
         }
 
         .menu-circle-item-small {
-            margin-top: -57px;
+            margin-top: -39px;
             position: relative;
-            margin-right: 7px;
-
-            &:first-child {
-                margin-left: 90px;
-            }
 
             img {
-                width: 71%;
+                width: 75%;
             }
 
             .rounded-circle-item {
-                &.rounded-circle.text {
-                    border: 1px solid $main-color-first;
-                    width: 110px;
-                    height: 110px;
-                }
-
-                .rounded-circle-text {
-                    font-size: 85px;
-                    color: $main-color-first;
-                }
+                width: 120px;
+                height: 120px;
+                margin-right: 0;
             }
 
             .menu-circle-text {
                 position: absolute;
                 font-weight: 500;
+                font-size: 11px;
+                line-height: 13px;
 
                 &.one-line {
-                    bottom: -45px;
-                    width: 100%;
+                    bottom: -17px;
+                    font-size: 14px;
+                    width: 101%;
                 }
                 &.two-line {
-                    bottom: -64px;
-                    font-size: 15px;
+                    bottom: -29px;
+                    font-size: 14px;
                     letter-spacing: 0.1px;
-                    width: 100%;
+                    width: 101%;
+                }
+            }
+
+            &:last-child {
+                .menu-circle-text {
+                    width: 130%;
+                    left: -8px;
                 }
             }
         }
@@ -1253,44 +1245,40 @@ header {
         }
 
         .menu-circle-item-small {
-            margin-top: -57px;
+            margin-top: -39px;
             position: relative;
-            margin-right: 7px;
-
-            &:first-child {
-                margin-left: 90px;
-            }
 
             img {
-                width: 71%;
+                width: 75%;
             }
 
             .rounded-circle-item {
-                &.rounded-circle.text {
-                    border: 1px solid $main-color-first;
-                    width: 110px;
-                    height: 110px;
-                }
-
-                .rounded-circle-text {
-                    font-size: 85px;
-                    color: $main-color-first;
-                }
+                width: 140px;
+                height: 140px;
+                margin-right: 0;
             }
 
             .menu-circle-text {
                 position: absolute;
                 font-weight: 500;
+                font-size: 18px;
+                line-height: 20px;
 
                 &.one-line {
-                    bottom: -45px;
-                    width: 100%;
+                    bottom: -23px;
+                    width: 101%;
                 }
                 &.two-line {
-                    bottom: -64px;
-                    font-size: 15px;
+                    bottom: -39px;
                     letter-spacing: 0.1px;
-                    width: 100%;
+                    width: 101%;
+                }
+            }
+
+            &:last-child {
+                .menu-circle-text {
+                    width: 130%;
+                    left: -8px;
                 }
             }
         }
@@ -3144,6 +3132,7 @@ header {
         background: rgba($main-color-second, 0.5);
         border: 1px solid rgba($main-color-first, 0.6);
         position: absolute;
+        width: 38%;
 
         .carousel-title {
             color: $main-color-first;
@@ -3156,24 +3145,17 @@ header {
 
     @media (min-width: 300px) and (max-width: 1197.98px) {
         .interior-caption {
-            background: rgba($main-color-second, 0.5);
-            border: 1px solid rgba($main-color-first, 0.6);
-            width: 504px;
-            position: absolute;
-            right: 77px;
-            top: 207px;
-            padding: 21px;
+            right: 60px;
+            top: 157px;
+            padding: 17px;
 
             .carousel-title {
-                color: $main-color-first;
                 margin-bottom: 12px;
             }
 
             p {
-                color: $main-color-first;
-                font-size: 10px;
-                letter-spacing: 0.6px;
-                line-height: 14px;
+                font-size: 8px;
+                line-height: 9px;
                 margin-bottom: 10px;
 
                 &.text-uppercase {
@@ -3185,13 +3167,9 @@ header {
 
     @media (min-width: 1198px) and (max-width: 1297.98px) {
         .interior-caption {
-            background: rgba($main-color-second, 0.5);
-            border: 1px solid rgba($main-color-first, 0.6);
-            width: 504px;
-            position: absolute;
-            right: 77px;
-            top: 207px;
-            padding: 21px;
+            right: 78px;
+            top: 193px;
+            padding: 17px;
 
             .carousel-title {
                 color: $main-color-first;
@@ -3202,7 +3180,7 @@ header {
                 color: $main-color-first;
                 font-size: 10px;
                 letter-spacing: 0.6px;
-                line-height: 14px;
+                line-height: 13px;
                 margin-bottom: 10px;
 
                 &.text-uppercase {
@@ -3214,21 +3192,15 @@ header {
 
     @media (min-width: 1298px) and (max-width: 1397.98px) {
         .interior-caption {
-            background: rgba($main-color-second, 0.5);
-            border: 1px solid rgba($main-color-first, 0.6);
-            width: 504px;
-            position: absolute;
             right: 77px;
             top: 207px;
             padding: 21px;
 
             .carousel-title {
-                color: $main-color-first;
                 margin-bottom: 12px;
             }
 
             p {
-                color: $main-color-first;
                 font-size: 10px;
                 letter-spacing: 0.6px;
                 line-height: 14px;
@@ -3243,18 +3215,17 @@ header {
 
     @media (min-width: 1398px) and (max-width: 1559.98px) {
         .interior-caption {
-            width: 727px;
-            right: 117px;
-            top: 293px;
-            padding: 43px 36px 43px 28px;
+            right: 87px;
+            top: 219px;
+            padding: 21px 23px;
 
             .carousel-title {
-                margin-bottom: 12px;
+                margin-bottom: 9px;
             }
 
             p {
-                font-size: 16px;
-                line-height: 20px;
+                font-size: 13px;
+                line-height: 15px;
 
                 &.text-uppercase {
                     margin-bottom: 0;
@@ -3265,18 +3236,17 @@ header {
 
     @media (min-width: 1560px) and (max-width: 1919.98px) {
         .interior-caption {
-            width: 727px;
-            right: 117px;
-            top: 293px;
-            padding: 43px 36px 43px 28px;
+            right: 97px;
+            top: 250px;
+            padding: 40px 31px;
 
             .carousel-title {
-                margin-bottom: 12px;
+                margin-bottom: 9px;
             }
 
             p {
-                font-size: 16px;
-                line-height: 20px;
+                font-size: 14px;
+                line-height: 17px;
 
                 &.text-uppercase {
                     margin-bottom: 0;
@@ -3306,26 +3276,29 @@ header {
             }
         }
     }
-
-
 }
 
 .menu-circle-design {
     overflow-x: initial;
+    .list-type-of-design {
+        .list-type {
+            font-weight: 500;
+
+            li {
+                color: $main-color-first;
+                a {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
 
     @media (min-width: 300px) and (max-width: 1197.98px) {
-
         .list-type-of-design {
             .list-type {
-                padding: 67px 166px;
-                font-weight: 500;
-                font-size: 20px;
-                letter-spacing: 0.8px;
-                line-height: 33px;
-
-                li {
-                    color: $main-color-first;
-                }
+                padding: 50px 125px 55px;
+                letter-spacing: 0.5px;
+                line-height: 23px;
             }
         }
 
@@ -3335,15 +3308,9 @@ header {
 
         .list-type-of-design {
             .list-type {
-                padding: 67px 166px;
-                font-weight: 500;
-                font-size: 20px;
-                letter-spacing: 0.8px;
-                line-height: 33px;
-
-                li {
-                    color: $main-color-first;
-                }
+                padding: 70px 142px 64px;
+                letter-spacing: 1px;
+                line-height: 29px;
             }
         }
 
@@ -3353,15 +3320,9 @@ header {
 
         .list-type-of-design {
             .list-type {
-                padding: 67px 166px;
-                font-weight: 500;
-                font-size: 20px;
-                letter-spacing: 0.8px;
-                line-height: 33px;
-
-                li {
-                    color: $main-color-first;
-                }
+                padding: 70px 142px 64px;
+                letter-spacing: 1px;
+                line-height: 29px;
             }
         }
 
@@ -3370,45 +3331,9 @@ header {
     @media (min-width: 1398px) and (max-width: 1559.98px) {
         .list-type-of-design {
             .list-type {
-                padding: 91px 239px;
-                font-weight: 500;
-                font-size: 30px;
-                letter-spacing: 0.8px;
-                line-height: 47px;
-
-                li {
-                    color: $main-color-first;
-                }
-            }
-        }
-
-        .menu-circle {
-            padding-left: 0;
-
-            .menu-circle-item-small {
-                .rounded-circle-item {
-                    width: 160px;
-                    margin-right: 19px;
-                    margin-top: 47px;
-                }
-
-                img {
-                    width: 77%
-                }
-
-                .menu-circle-text {
-                    font-size: 20px;
-                    word-wrap: normal;
-
-                    &.one-line {
-                        bottom: 10px;
-                    }
-
-                    &.two-line {
-                        bottom: -11px;
-                        line-height: 29px;
-                    }
-                }
+                padding: 73px 174px 52px;
+                letter-spacing: 1px;
+                line-height: 30px;
             }
         }
     }
@@ -3416,48 +3341,15 @@ header {
     @media (min-width: 1560px) and (max-width: 1919.98px) {
         .list-type-of-design {
             .list-type {
-                padding: 91px 239px;
+                padding: 81px 201px 55px;
                 font-weight: 500;
-                font-size: 30px;
-                letter-spacing: 0.8px;
-                line-height: 47px;
+                line-height: 38px;
 
-                li {
-                    color: $main-color-first;
+                li a{
+                    font-size: 26px;
                 }
             }
         }
-
-        .menu-circle {
-            padding-left: 0;
-
-            .menu-circle-item-small {
-                .rounded-circle-item {
-                    width: 160px;
-                    margin-right: 19px;
-                    margin-top: 47px;
-                }
-
-                img {
-                    width: 77%
-                }
-
-                .menu-circle-text {
-                    font-size: 20px;
-                    word-wrap: normal;
-
-                    &.one-line {
-                        bottom: 10px;
-                    }
-
-                    &.two-line {
-                        bottom: -11px;
-                        line-height: 29px;
-                    }
-                }
-            }
-        }
-
     }
 
     @media (min-width: 1920px) {
@@ -3471,36 +3363,6 @@ header {
 
                 li {
                     color: $main-color-first;
-                }
-            }
-        }
-
-        .menu-circle {
-            padding-left: 0;
-
-            .menu-circle-item-small {
-                .rounded-circle-item {
-                    width: 160px;
-                    margin-right: 19px;
-                    margin-top: 47px;
-                }
-
-                img {
-                    width: 77%
-                }
-
-                .menu-circle-text {
-                    font-size: 20px;
-                    word-wrap: normal;
-
-                    &.one-line {
-                        bottom: 10px;
-                    }
-
-                    &.two-line {
-                        bottom: -11px;
-                        line-height: 29px;
-                    }
                 }
             }
         }
@@ -3509,7 +3371,28 @@ header {
 
 .interior {
     height: 178px;
-    padding-right: 70px;
+    padding-right: 0;
+    padding-left: 0;
+
+    @media (min-width: 300px) and (max-width: 1197.98px) {
+        height: 133px;
+    }
+
+    @media (min-width: 1098px) and (max-width: 1397.98px) {
+        height: 153px;
+    }
+
+    @media (min-width: 1398px) and (max-width: 1559.98px) {
+        height: 173px;
+    }
+
+    @media (min-width: 1560px) and (max-width: 1919.98px) {
+        height: 217px;
+    }
+
+    @media (min-width: 1920px) {
+        height: 237px;
+    }
 
     p {
         color: $main-color-first;
@@ -3530,23 +3413,36 @@ header {
     }
 
     @media (min-width: 300px) and (max-width: 1197.98px) {
-        //margin: 12px 11px 0 0;
+
+        &.text-center {
+            margin-bottom: 0;
+        }
+
+        .title {
+            font-size: 27px;
+            margin-left: 25px;
+            margin-bottom: 0;
+            padding-top: 3px;
+        }
     }
 
     @media (min-width: 1198px) and (max-width: 1297.98px) {
-
+        .text-center.title {
+            font-size: 32px;
+            padding-top: 0;
+        }
     }
 
     @media (min-width: 1298px) and (max-width: 1397.98px) {
         p {
             &.text-center {
-                font-size: 18px;
+                font-size: 13px;
                 margin: 35px 0 10px 29px;
             }
         }
 
         .title {
-            font-size: 49px;
+            font-size: 33px;
             letter-spacing: 1px;
             margin-left: 65px;
             margin-bottom: 0;
@@ -3556,15 +3452,14 @@ header {
     @media (min-width: 1398px) and (max-width: 1559.98px) {
         p {
             &.text-center {
-                font-size: 18px;
-                margin: 35px 0 10px 29px;
+                font-size: 13px;
+                margin: 35px 0 10px 15px;
             }
         }
 
         .title {
-            font-size: 49px;
-            letter-spacing: 1px;
-            margin-left: 65px;
+            font-size: 37px;
+            margin-left: 25px;
             margin-bottom: 0;
         }
     }
@@ -3572,16 +3467,16 @@ header {
     @media (min-width: 1560px) and (max-width: 1919.98px) {
         p {
             &.text-center {
-                font-size: 18px;
-                margin: 35px 0 10px 29px;
+                font-size: 15px;
+                margin: 35px 0 10px 20px;
             }
         }
 
         .title {
-            font-size: 49px;
-            letter-spacing: 1px;
-            margin-left: 65px;
+            font-size: 42px;
+            margin-left: 32px;
             margin-bottom: 0;
+            padding-top: 0;
         }
     }
 
@@ -3603,36 +3498,25 @@ header {
 }
 
 .new-project {
-
-    @media (min-width: 300px) and (max-width: 1197.98px) {
-        padding-top: 77px;
-
-        .title {
-            .carousel-title {
-
-            }
-        }
-    }
-
     @media (min-width: 1198px) and (max-width: 1297.98px) {
-        padding-top: 77px;
+        //padding-top: 77px;
 
         .title {
             .carousel-title {
-                margin-bottom: 6px;
+                //margin-bottom: 6px;
             }
         }
 
         .project-slide-box .row-slide-project .btn-m5-project {
-            margin: 19px 0 0 22px;
-            padding: 0px 32px;
-            font-size: 22px;
-            letter-spacing: 1px;
+            //margin: 19px 0 0 22px;
+            //padding: 0px 32px;
+            //font-size: 22px;
+            //letter-spacing: 1px;
         }
     }
 
     @media (min-width: 1298px) and (max-width: 1397.98px) {
-        padding-top: 77px;
+        //padding-top: 77px;
 
         .title {
             .carousel-title {
@@ -3641,32 +3525,32 @@ header {
         }
 
         .project-slide-box .row-slide-project .btn-m5-project {
-            margin: 19px 0 0 22px;
-            padding: 0px 32px;
-            font-size: 22px;
-            letter-spacing: 1px;
+            //margin: 19px 0 0 22px;
+            //padding: 0px 32px;
+            //font-size: 22px;
+            //letter-spacing: 1px;
         }
     }
 
     @media (min-width: 1398px) and (max-width: 1559.98px) {
-        padding-top: 77px;
+        //padding-top: 77px;
 
-        .title {
-            .carousel-title {
-                margin-bottom: 6px;
-            }
-        }
+        //.title {
+        //    .carousel-title {
+        //        margin-bottom: 6px;
+        //    }
+        //}
 
         .project-slide-box .row-slide-project .btn-m5-project {
-            margin: 19px 0 0 22px;
-            padding: 0px 32px;
-            font-size: 22px;
-            letter-spacing: 1px;
+            //margin: 19px 0 0 22px;
+            //padding: 0px 32px;
+            //font-size: 22px;
+            //letter-spacing: 1px;
         }
     }
 
     @media (min-width: 1560px) and (max-width: 1919.98px) {
-        padding-top: 77px;
+        //padding-top: 77px;
 
         .title {
             .carousel-title {
@@ -3683,7 +3567,7 @@ header {
     }
 
     @media (min-width: 1920px) {
-        padding-top: 77px;
+        //padding-top: 77px;
 
         .title {
             .carousel-title {
@@ -3702,52 +3586,60 @@ header {
 }
 
 .bid {
+    overflow-x: initial;
     .carousel-title {
         text-align: center;
     }
 
     @media (min-width: 300px) and (max-width: 1197.98px) {
-        padding-top: 77px;
+        padding-top: 21px;
 
-        .title {
-            .carousel-title {
-
-            }
+        .contact-box {
+            height: 310px;
         }
     }
 
     @media (min-width: 1198px) and (max-width: 1297.98px) {
-        margin: 17px 3px;
+        padding-top: 30px;
+        .carousel-title {
+            font-size: 32px;
+        }
 
-        .icon {
-            font-size: 30px;
+        .contact-box {
+            height: 370px;
         }
     }
 
     @media (min-width: 1298px) and (max-width: 1397.98px) {
-        margin: 21px 16px 0 0;
+        padding-top: 30px;
+        .carousel-title {
+            font-size: 32px;
+        }
 
-        .icon {
-            font-size: 31px;
+        .contact-box {
+            height: 390px;
         }
     }
 
     @media (min-width: 1398px) and (max-width: 1559.98px) {
-        margin-top: 22px;
-        margin-right: 13px;
-
-        .icon {
-            font-size: 33px;
+        padding-top: 30px;
+        .carousel-title {
+            font-size: 32px;
         }
 
+        .contact-box {
+            height: 450px;
+        }
     }
 
     @media (min-width: 1560px) and (max-width: 1919.98px) {
-        margin-top: 22px;
-        margin-right: 6px;
+        padding-top: 30px;
+        .carousel-title {
+            font-size: 32px;
+        }
 
-        .icon {
-            font-size: 38px;
+        .contact-box {
+            height: 450px;
         }
     }
 
