@@ -1,0 +1,38 @@
+@import 'variables';
+
+.HOVER {
+  --width: 100%;
+  --time: 0.5s;
+  position: relative;
+  display: inline-block;
+  color: $main-color-second;
+  overflow: hidden;
+}
+
+.HOVER a {
+  position: relative;
+  z-index: 5;
+  transition: color var(--time);
+}
+
+.HOVER span {
+  position: absolute;
+  display: block;
+  content: "";
+
+  z-index: 0;
+  width: 0;
+  height: 0;
+  top: 19px;
+
+  background: transparent;
+  color: $main-color-second;
+  border: 1px solid rgba($main-color-second, 0);
+  transform: translate(-50%, -50%);
+  transition: width var(--time);
+}
+
+.HOVER:hover span {
+    width: calc(calc(var(--width)*3));
+    border: 1px solid rgba($main-color-second, 1);
+  }

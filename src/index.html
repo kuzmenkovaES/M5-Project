@@ -7,49 +7,59 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="scss/main.scss" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css" crossorigin="anonymous">
         <title>M5 Design Studio</title>
     </head>
     <body data-spy="scroll">
-        <header>
-            <div class="logo">
+        <header class="d-flex justify-content-between align-items-center">
+            <!--<div class="d-flex justify-content-between">-->
                 <a class="navbar-brand" href="index.html">
                     <img src="images/Logo_big.png"  alt="M5 Design Studio">
                 </a>
-            </div>
-            <div class="menu">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="interior-design.html">Dизайн интерьера</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Архитектура</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Архитектурное проектирование</a>
-                            <a class="dropdown-item" href="#">Дизайн фасадов</a>
-                            <a class="dropdown-item" href="#">Архитектурные концепции</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">3D визуализация</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Ландшафт</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">О нас</a>
-                    </li>
-                </ul>
-            </div>
+                <div class="menu align-self-baseline">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item HOVER">
+                            <span></span>
+                            <a class="nav-link" href="interior-design.html">Dизайн интерьера</a>
+                        </li>
+                        <li class="nav-item HOVER">
+                            <span></span>
+                            <a class="nav-link" href="#">Архитектура</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Архитектурное проектирование</a>
+                                <a class="dropdown-item" href="#">Дизайн фасадов</a>
+                                <a class="dropdown-item" href="#">Архитектурные концепции</a>
+                            </div>
+                        </li>
+                        <li class="nav-item HOVER">
+                            <span></span>
+                            <a class="nav-link" href="#">3D визуализация</a>
+                        </li>
+                        <li class="nav-item HOVER">
+                            <span></span>
+                            <a class="nav-link disabled" href="#">Ландшафт</a>
+                        </li>
+                        <li class="nav-item portfolio-btn HOVER">
+                            <span></span>
+                            <a class="nav-link" href="portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="nav-item HOVER">
+                            <span></span>
+                            <a class="nav-link disabled" href="#">О нас</a>
+                        </li>
+                        <li class="nav-item HOVER">
+                            <span></span>
+                            <a class="nav-link disabled" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            <!--</div>-->
+
             <div class="social-media">
-                <a class="navbar-brand" href="#">
+                <a class="nav-item" href="#">
                     <i class="icon icon-instagram"></i>
                 </a>
-                <a class="navbar-brand" href="#">
+                <a class="nav-item" href="#">
                     <i class="icon icon-behance2"></i>
                 </a>
             </div>
@@ -65,12 +75,11 @@
                                 <h5 class="pre-title">немного</h5>
                                 <h4 class="carousel-title title-anomation-right">О нас</h4>
                             </div>
-                            <div class="nabor-texta" hidden>
+                            <div class="nabor-texta swipe-top-text">
                                 <p class="carousel-text">Студия М5 предлагает профессиональные и креативные решения в области дизайна и реализации интерьеров,  архитектурного проектирования и 3D визуализации. Наша работа направлена на то, чтобы обеспечить удобство и эстетически приятное восприятие окружающего вас пространства, от маленькой уютной квартиры или небольшого загородного домика до просторного офисного павильона или пафосного ресторана. Мы специализируемся на дизайне интерьера различных помещений, ландшафтном дизайне, изготовлении архитектурных проектов и концепций, а также 3D визуализации объектов архитектуры и интерьера.Наша работа по дизайну интерьера начинается с вашей уникальной идеи. <br/> Даже если у вас отсутствует свое оригинальное виденье, наши опытные специалисты всегда предложат вам оптимальный вариант дизайнерского решения исходя из специфики помещения. Далее следует кропотливая работа, которая позволяет преобразовать исходную идею в полноценный дизайн-проект. А результат нашего труда никогда не вызывает нареканий и дает неоспоримое преимущество перед конкурентами.</p>
                                 <p class="carousel-text">С уважением команда М5.</p>
                                 <p class="know-more"><a href="#" >УЗНАТЬ БОЛЬШЕ</a></p>
                             </div>
-                            <div class="enter-text-here" hidden></div>
                         </div>
                     </div>
                     <!--<div class="carousel-item">-->
@@ -116,34 +125,42 @@
                 <h3 class="carousel-title">Услуги</h3>
             </div>
             <div class="menu-circle d-flex align-items-center justify-content-center">
-                <div class="menu-circle-item">
+                <div class="menu-circle-item col-3">
                     <div class="rounded-circle rounded-circle-item text d-flex align-items-center justify-content-center">
                         <span class="rounded-circle-text">И</span>
                     </div>
 
                     <p class="menu-circle-text">Дизайн и реализация интерьеров</p>
                 </div>
-                <div class="menu-circle-item">
-                    <div class="rounded-circle rounded-circle-item  d-flex align-items-center justify-content-center">
-                        <img src="./images/architecture_small.png" alt="landscape"/>
+                <div class="menu-circle-item col-3">
+                    <div class="rounded-circle rounded-circle-item text d-flex align-items-center justify-content-center">
+                        <span class="rounded-circle-text">A</span>
                     </div>
 
                     <p class="menu-circle-text">Архитектурное проектирование</p>
                 </div>
-                <div class="menu-circle-item">
-                    <div class="rounded-circle rounded-circle-item  d-flex align-items-center justify-content-center">
-                        <img src="./images/3d_small.png" alt="landscape"/>
+                <div class="menu-circle-item col-3">
+                    <div class="rounded-circle rounded-circle-item text d-flex align-items-center justify-content-center">
+                        <span class="rounded-circle-text visual-design">3D</span>
                     </div>
 
                     <p class="menu-circle-text one-line-words">3D визуализация</p>
                 </div>
-                <div class="menu-circle-item">
-                    <div class="rounded-circle rounded-circle-item  d-flex align-items-center justify-content-center">
-                        <img src="./images/landscape_small.png" alt="landscape"/>
+                <div class="menu-circle-item col-3">
+                    <div class="rounded-circle rounded-circle-item text d-flex align-items-center justify-content-center">
+                        <span class="rounded-circle-text land-design">V</span>
                     </div>
 
                     <p class="menu-circle-text">Ландшафтный<br/> дизайн</p>
                 </div>
+
+                <!--<div class="menu-circle-item">-->
+                    <!--<div class="rounded-circle rounded-circle-item  d-flex align-items-center justify-content-center">-->
+                        <!--<img src="./images/landscape_small.png" alt="landscape"/>-->
+                    <!--</div>-->
+
+                    <!--<p class="menu-circle-text">Ландшафтный<br/> дизайн</p>-->
+                <!--</div>-->
             </div>
         </div>
 
@@ -216,7 +233,7 @@
             <div class="contact-box">
                 <img src="images/map_3D.png" alt="map"/>
                 <div class="carousel-caption contact">
-                    <div class="">
+                    <div class="mb-5">
                         <p>г. Минск, ул. Пономаренко 35а</p>
                         <p>оф. 219</p>
                         <p>M5 studio</p>
@@ -227,7 +244,7 @@
                         <p class="contact-article-partner">Партнерам:</p>
                         <p>m5-info@mail.ru</p>
                     </div>
-                    <div class="btn-group-contact">
+                    <div class="btn-group-contact d-flex justify-content-between align-items-center align-self-end">
                         <button class="btn btn-m5-project">Связаться с нами</button>
                         <a class="contact-inst" href="#">
                             <i class="icon icon-instagram"></i>
@@ -247,55 +264,12 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="js/jquery.viewportchecker.js"  crossorigin="anonymous"></script>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>-->
-    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
+    <script src="js/hover-menu.js"  crossorigin="anonymous"></script>
+    <script src="js/light.js"  crossorigin="anonymous"></script>
     <script>
         (function reload() {
-            const formEntry = document.getElementsByClassName('nabor-texta')[0].children,
-                cursor = `<span>|</span>`;
-            let boxWithNewText = document.getElementsByClassName('enter-text-here');
 
-            $('.title').viewportChecker({
-                classToAdd: 'swipe-left-text', // Class to add to the elements when they are visible,
-                removeClassAfterAnimation: false,
-                offset: 0, // The offset of the elements (let them appear earlier or later). This can also be percentage based by adding a '%' at the end
-                repeat: false, // Add the possibility to remove the class if the elements are not visible
-            });
 
-            function typeIt() {
-
-                for (let i in formEntry) {
-                    if( typeof formEntry[i] === 'object') {
-                        // console.log(formEntry[i])
-                        const id = Math.random().toString(16).slice(2);
-                        // console.log(id)
-                        let counter = 0,
-                            typedLen = formEntry[i].length,
-                            tagNameCopyElement = formEntry[i].tagName,
-                            tagClassCopyElement = formEntry[i].className;
-
-                        boxWithNewText[0].removeAttribute("hidden");
-                        let box = document.createElement(tagNameCopyElement);
-                        box.className = tagClassCopyElement;
-                        box.id = id;
-                        boxWithNewText[0].appendChild(box);
-
-                        let newbox = document.getElementById(id);
-                        newbox.innerHTML = cursor;
-
-                        let k = setInterval(() => {
-
-                            newbox.innerHTML = formEntry[i].innerText.substr(0, counter) + cursor;
-                            counter++;
-                            if(counter === typedLen + 1) {
-                                clearInterval(k);
-                            }
-                        }, 30);
-                    }
-                }
-            }
-
-            typeIt();
         })();
 
     </script>
