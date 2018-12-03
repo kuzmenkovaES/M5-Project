@@ -1161,13 +1161,19 @@
   --width: 100%;
   --time: 0.5s;
   position: relative;
-  display: inline-block;
-  color: #353534; }
+  display: inline-block; }
 
-.HOVER a {
+.light {
+  --width: 100%;
+  --time: 0.5s;
   position: relative;
-  z-index: 5;
-  transition: color var(--time); }
+  display: inline-block;
+  overflow: hidden; }
+
+.HOVER a,
+.light .rounded-circle-text {
+  position: relative;
+  z-index: 5; }
 
 .HOVER span {
   position: absolute;
@@ -1177,9 +1183,29 @@
   width: 0;
   height: 0;
   top: 0;
-  background: transparent;
-  color: #353534;
   border: 1px solid rgba(53, 53, 52, 0); }
 
 .HOVER:hover span {
   border: 1px solid #353534; }
+
+.light .shadow-light {
+  position: absolute;
+  display: block;
+  content: "";
+  z-index: 0;
+  width: 0;
+  height: 0;
+  top: 0;
+  border-radius: 100%; }
+
+.light:hover .shadow-light {
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 0 !important; }
+
+.shadow-light-half-right {
+  background: radial-gradient(circle at 0%, #353534 50%, rgba(255, 255, 255, 0.15) 95%);
+  margin-top: 0 !important; }
+
+.shadow-light-half-left {
+  background: radial-gradient(circle at 100%, #353534 50%, rgba(255, 255, 255, 0.15) 95%);
+  margin-top: 0 !important; }

@@ -16,9 +16,7 @@
         }
 
         element.addEventListener("mousemove", event => {
-            console.log(event)
-            // console.log(element)
-            console.log(index)
+            // console.log(event)
             let left = event.offsetX - widthNavLink/2;
             ELEMENTS_SPAN[index].style.left = `${left}px`;
         });

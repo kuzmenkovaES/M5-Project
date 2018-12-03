@@ -846,17 +846,17 @@ header {
 
     @media (max-width: 907.98px) {
         height: 278px;
+        padding-left: 25%;
 
         .menu-circle-item {
             position: relative;
 
             .menu-circle-text {
-                line-height: 16px;
+                line-height: 1em;
                 position: absolute;
-                font-size: 12px;
-                bottom: -50px;
-                width: 160px;
-                letter-spacing: 1px;
+                font-size: 0.9em;
+                bottom: -40px;
+                width: 80px;
 
                 &.one-line-words {
                     bottom: -35px;
@@ -866,13 +866,15 @@ header {
         }
 
         .rounded-circle-item {
-            //margin-right: 26px;
+            margin-right: 26px;
             margin-top: -1px;
 
             height: 100%;
             width: 100%;
 
             &.text {
+                height: 80px;
+                width: 80px;
                 span {
                     font-size: 3em;
                     margin-top: 0;

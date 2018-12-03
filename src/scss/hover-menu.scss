@@ -5,14 +5,23 @@
   --time: 0.5s;
   position: relative;
   display: inline-block;
-  color: $main-color-second;
+  //color: $main-color-second;
   //overflow: hidden;
 }
 
-.HOVER a {
+.light {
+  --width: 100%;
+  --time: 0.5s;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.HOVER a,
+.light .rounded-circle-text {
   position: relative;
   z-index: 5;
-  transition: color var(--time);
+  //transition: color var(--time);
 }
 
 .HOVER span {
@@ -25,8 +34,6 @@
   height: 0;
   top: 0;
 
-  background: transparent;
-  color: $main-color-second;
   border: 1px solid rgba($main-color-second, 0);
   //transform: translate(-50%, -50%);
   //transition: var(--time);
@@ -35,4 +42,33 @@
 .HOVER:hover span {
     //width: calc(var(--width));
     border: 1px solid rgba($main-color-second, 1);
-  }
+}
+
+.light .shadow-light {
+  position: absolute;
+  display: block;
+  content: "";
+
+  z-index: 0;
+  width: 0;
+  height: 0;
+  top: 0;
+
+  //background: rgba(#fff, 0);
+  border-radius: 100%;
+}
+
+.light:hover .shadow-light {
+  background: rgba(#fff, 0.1);
+  margin-top: 0!important;
+}
+
+.shadow-light-half-right {
+  background: radial-gradient(circle at 0%, #353534 50%, rgba(255,255,255, 0.15) 95%);
+  margin-top: 0!important;
+}
+
+.shadow-light-half-left {
+  background: radial-gradient(circle at 100%, #353534 50%, rgba(255,255,255, 0.15) 95%);
+  margin-top: 0!important;
+}
