@@ -1160,50 +1160,6 @@
     width: 100%; } }
 
 /*
-* demo page
-*/
-@media screen and (min-width: 768px) {
-  html {
-    font-size: 62.5%; } }
-
-@media screen and (max-width: 767px) {
-  html {
-    font-size: 50%; } }
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
-  font-size: 1.6rem;
-  color: #fff;
-  margin: 0;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch; }
-
-a {
-  text-decoration: none;
-  color: inherit; }
-
-a:hover, a:focus {
-  text-decoration: underline; }
-
-.page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-
-.page__demo {
-  flex-grow: 1; }
-
-.page__container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start; }
-
-.main-container {
-  padding-left: 1rem;
-  padding-right: 1rem; }
-
-/*
 * The function calc is working wrong in case calculations in the Firefox
 */
 .photobox {
@@ -2361,50 +2317,6 @@ a:hover, a:focus {
 @media screen and (max-width: 480px) {
   .photobox {
     width: 100%; } }
-
-/*
-* demo page
-*/
-@media screen and (min-width: 768px) {
-  html {
-    font-size: 62.5%; } }
-
-@media screen and (max-width: 767px) {
-  html {
-    font-size: 50%; } }
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
-  font-size: 1.6rem;
-  color: #fff;
-  margin: 0;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch; }
-
-a {
-  text-decoration: none;
-  color: inherit; }
-
-a:hover, a:focus {
-  text-decoration: underline; }
-
-.page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-
-.page__demo {
-  flex-grow: 1; }
-
-.page__container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start; }
-
-.main-container {
-  padding-left: 1rem;
-  padding-right: 1rem; }
 
 .HOVER {
   --width: 100%;
@@ -3608,50 +3520,6 @@ a:hover, a:focus {
   .photobox {
     width: 100%; } }
 
-/*
-* demo page
-*/
-@media screen and (min-width: 768px) {
-  html {
-    font-size: 62.5%; } }
-
-@media screen and (max-width: 767px) {
-  html {
-    font-size: 50%; } }
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
-  font-size: 1.6rem;
-  color: #fff;
-  margin: 0;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch; }
-
-a {
-  text-decoration: none;
-  color: inherit; }
-
-a:hover, a:focus {
-  text-decoration: underline; }
-
-.page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-
-.page__demo {
-  flex-grow: 1; }
-
-.page__container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start; }
-
-.main-container {
-  padding-left: 1rem;
-  padding-right: 1rem; }
-
 @font-face {
   font-family: 'icon';
   src: url("../fonts/icons/icons.eot?9re3qw");
@@ -3728,7 +3596,11 @@ body {
       overflow-x: hidden; } }
 
 header {
-  padding: 14px 20px 14px 14px; }
+  padding: 14px 20px 14px 14px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff; }
   @media (min-width: 1920px) {
     header {
       padding: 14px 40px 14px 14px; } }
@@ -3904,6 +3776,7 @@ header {
     right: 0; }
     .carousel-caption .know-more a {
       text-decoration: underline;
+      opacity: 0;
       color: #fff;
       letter-spacing: 1px;
       font-size: 9px; }
@@ -3948,9 +3821,6 @@ header {
         font-size: 10px;
         line-height: 12px;
         margin-bottom: 22px; }
-        .carousel-caption .carousel-text.nabor-texta {
-          width: 550px;
-          height: 90%; }
       .carousel-caption .know-more {
         position: absolute;
         bottom: 0px; }
@@ -3968,13 +3838,9 @@ header {
       padding: 25px 21px; }
       .carousel-caption .pre-title {
         font-size: 11px;
-        text-transform: uppercase;
-        text-align: right;
         margin: 0px 12px 3px; }
       .carousel-caption .carousel-title {
         font-size: 31px;
-        text-transform: uppercase;
-        text-align: right;
         margin-top: -8px;
         margin-right: 13px;
         margin-bottom: 17px; }
@@ -3982,9 +3848,6 @@ header {
         font-size: 10px;
         line-height: 12px;
         margin-bottom: 30px; }
-        .carousel-caption .carousel-text.nabor-texta {
-          width: 550px;
-          height: 90%; }
       .carousel-caption .know-more {
         position: absolute;
         bottom: 0px; }
@@ -4022,11 +3885,6 @@ header {
     .carousel-caption {
       margin: 0;
       padding: 25px 30px; }
-      .carousel-caption.animation {
-        white-space: nowrap;
-        overflow: hidden;
-        -webkit-animation: type 5s steps(50, end);
-        animation: type 5s steps(50, end); }
       .carousel-caption .pre-title {
         font-size: 13px;
         margin: 0 12px; }
@@ -4040,11 +3898,8 @@ header {
         line-height: 15px;
         margin-bottom: 7px; }
       .carousel-caption .know-more {
-        position: absolute;
         bottom: 40px; }
         .carousel-caption .know-more a {
-          color: #fff;
-          text-decoration: underline;
           font-size: 18.3px;
           letter-spacing: 1px; }
       .carousel-caption p {
@@ -4067,29 +3922,21 @@ header {
         line-height: 15px;
         margin-bottom: 7px; }
       .carousel-caption .know-more {
-        position: absolute;
         bottom: 40px; }
         .carousel-caption .know-more a {
-          color: #fff;
-          text-decoration: underline;
           font-size: 18.3px;
           letter-spacing: 1px; }
       .carousel-caption p {
-        font-size: 18.3px;
-        text-align: start; } }
+        font-size: 18.3px; } }
   @media (min-width: 1920px) {
     .carousel-caption {
       margin: 0;
       padding: 35px 42px; }
       .carousel-caption .pre-title {
         font-size: 19px;
-        text-transform: uppercase;
-        text-align: right;
         margin: 0 12px; }
       .carousel-caption .carousel-title {
         font-size: 50px;
-        text-transform: uppercase;
-        text-align: right;
         margin-top: -8px;
         margin-right: 13px;
         margin-bottom: 27px; }
@@ -4097,19 +3944,13 @@ header {
         font-size: 16px;
         line-height: 19px;
         margin-bottom: 7px; }
-        .carousel-caption .carousel-text.nabor-texta {
-          width: 550px; }
       .carousel-caption .know-more {
-        position: absolute;
         bottom: 40px; }
         .carousel-caption .know-more a {
-          color: #fff;
-          text-decoration: underline;
           font-size: 18.3px;
           letter-spacing: 1px; }
       .carousel-caption p {
-        font-size: 18.3px;
-        text-align: start; } }
+        font-size: 18.3px; } }
 
 .main-box {
   background: #353534; }
@@ -4443,13 +4284,13 @@ header {
           position: absolute;
           font-weight: 500;
           font-size: 11px;
-          line-height: 13px; }
+          line-height: 20px; }
           .menu-circle .menu-circle-item-small .menu-circle-text.one-line {
-            bottom: -17px;
+            bottom: -35px;
             font-size: 14px;
             width: 101%; }
           .menu-circle .menu-circle-item-small .menu-circle-text.two-line {
-            bottom: -29px;
+            bottom: -56px;
             font-size: 14px;
             letter-spacing: 0.1px;
             width: 101%; }
@@ -4529,36 +4370,34 @@ header {
         .menu-circle .rounded-circle-item img {
           width: 100%; }
       .menu-circle .menu-circle-item-small {
-        margin-top: -57px;
-        position: relative;
-        margin-right: 7px; }
-        .menu-circle .menu-circle-item-small:first-child {
-          margin-left: 90px; }
+        margin-top: -39px;
+        position: relative; }
         .menu-circle .menu-circle-item-small img {
-          width: 71%; }
-        .menu-circle .menu-circle-item-small .rounded-circle-item.rounded-circle.text {
-          border: 1px solid #fff;
-          width: 110px;
-          height: 110px; }
-        .menu-circle .menu-circle-item-small .rounded-circle-item .rounded-circle-text {
-          font-size: 85px;
-          color: #fff; }
+          width: 75%; }
+        .menu-circle .menu-circle-item-small .rounded-circle-item {
+          width: 180px;
+          height: 180px;
+          margin-right: 0; }
         .menu-circle .menu-circle-item-small .menu-circle-text {
           position: absolute;
-          font-weight: 500; }
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 20px; }
           .menu-circle .menu-circle-item-small .menu-circle-text.one-line {
-            bottom: -45px;
-            width: 100%; }
+            bottom: -33px;
+            width: 101%; }
           .menu-circle .menu-circle-item-small .menu-circle-text.two-line {
-            bottom: -64px;
-            font-size: 15px;
+            bottom: -49px;
             letter-spacing: 0.1px;
-            width: 100%; } }
+            width: 101%; }
+        .menu-circle .menu-circle-item-small:last-child .menu-circle-text {
+          width: 130%;
+          left: -8px; } }
 
 .line-gradient {
   height: 1px;
   background: linear-gradient(to right, #353534 17%, rgba(255, 255, 255, 0.2)); }
-  @media (min-width: 1920px) {
+  @media (min-width: 1420px) {
     .line-gradient {
       height: 2px; } }
 
@@ -5901,43 +5740,76 @@ header {
         height: 450px; } }
   @media (min-width: 1920px) {
     .bid {
-      padding-top: 77px; }
+      padding-top: 60px; }
       .bid .carousel-title {
-        font-size: 48px;
-        margin: -16px 0 13px 57px;
-        letter-spacing: 2px; } }
+        font-size: 50px;
+        margin-bottom: 1px; }
+      .bid .contact-box {
+        height: 600px; } }
 
-.hide-title {
-  display: none; }
-
-.swipe-left-text {
+.swipe-left-text-first {
   position: relative;
   animation-name: animateLeft;
   animation-delay: 0ms;
-  animation-duration: 2000ms;
+  animation-duration: 2800ms;
+  animation-fill-mode: both; }
+
+.swipe-left-text-second {
+  position: relative;
+  animation-name: animateLeft;
+  animation-delay: 0ms;
+  animation-duration: 4000ms;
   animation-fill-mode: both; }
 
 .swipe-top-text {
   position: relative;
+  overflow: hidden;
   animation-name: animateTop;
   animation-delay: 0ms;
-  animation-duration: 2000ms;
+  animation-duration: 3000ms;
   animation-fill-mode: both; }
+
+.swipe-top-text-pholosophy {
+  overflow: hidden;
+  animation-name: animateTopFull;
+  animation-delay: 0ms;
+  animation-duration: 3000ms;
+  animation-fill-mode: both; }
+
+.hide-show-link {
+  overflow: hidden;
+  animation-name: showLink;
+  animation-delay: 0ms;
+  animation-duration: 5000ms;
+  animation-fill-mode: forwards; }
 
 @keyframes animateTop {
   0% {
-    opacity: 0;
-    transform: translate(0px, -1000px) rotate(0deg);
     height: 0; }
+  20% {
+    height: 20%; }
+  40% {
+    height: 40%; }
   60% {
-    transform: translate(0px, 30px) rotate(0deg);
-    height: 30%; }
-  80% {
-    transform: translate(0px, -10px) rotate(0deg);
     height: 60%; }
+  80% {
+    height: 80%; }
   100% {
-    transform: translate(0px, 0px) rotate(0deg);
     height: 90%; } }
+
+@keyframes animateTopFull {
+  0% {
+    height: 0; }
+  20% {
+    height: 20%; }
+  40% {
+    height: 40%; }
+  60% {
+    height: 60%; }
+  80% {
+    height: 80%; }
+  100% {
+    height: 100%; } }
 
 @keyframes animateLeft {
   0% {
@@ -5945,6 +5817,12 @@ header {
     opacity: 0; }
   100% {
     left: 0px;
+    opacity: 1; } }
+
+@keyframes showLink {
+  0% {
+    opacity: 0; }
+  100% {
     opacity: 1; } }
 
 .grayscale {
