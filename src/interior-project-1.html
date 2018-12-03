@@ -1,317 +1,328 @@
 <!doctype html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="scss/main.scss" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css" crossorigin="anonymous">
-    <title>M5 Design Studio</title>
-</head>
-<body>
-<header>
-    <div class="logo">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="scss/main.scss" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css" crossorigin="anonymous">
+        <title>M5 Design Studio</title>
+    </head>
+    <body>
+        <header class="d-flex justify-content-between align-items-center">
+        <!--<div class="d-flex justify-content-between">-->
         <a class="navbar-brand" href="index.html">
             <img src="images/Logo_big.png"  alt="M5 Design Studio">
         </a>
-    </div>
-    <div class="menu">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link" href="interior-design.html">Dизайн интерьера</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Архитектура</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Архитектурное проектирование</a>
-                    <a class="dropdown-item" href="#">Дизайн фасадов</a>
-                    <a class="dropdown-item" href="#">Архитектурные концепции</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">3D визуализация</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Ландшафт</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="portfolio.html">Портфолио</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">О нас</a>
-            </li>
-        </ul>
-    </div>
-    <div class="social-media">
-        <a class="navbar-brand" href="#">
-            <i class="icon icon-instagram"></i>
-        </a>
-        <a class="navbar-brand" href="#">
-            <i class="icon icon-behance2"></i>
-        </a>
-    </div>
-</header>
-
-<div class="main-box project-description">
-    <h5 class="title">Проект <span class="title-project">Contemp</span></h5>
-    <div class="d-flex justify-content-center align-items-top">
-        <img class="d-block planing-project" src="images/planirovka_project.png" alt="Interior design">
-        <div class="description-project">
-            <ul class="description-pgict-list">
-                <li>Еоличество комнат: 3</li>
-                <li>Площадь: 98.2 м2</li>
-                <li>Руковолитель проекта: Сакольчик Максим</li>
-                <li>Дизайнер Анастасия Шило</li>
-                <li>Расположение: г.Минск, ул. П. Мстиславца 7</li>
-                <li>Год: 2017</li>
+        <div class="menu align-self-baseline">
+            <ul class="nav justify-content-center">
+                <li class="nav-item HOVER">
+                    <span></span>
+                    <a class="nav-link" href="interior-design.html">Dизайн интерьера</a>
+                </li>
+                <li class="nav-item HOVER">
+                    <span></span>
+                    <a class="nav-link" href="#">Архитектура</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Архитектурное проектирование</a>
+                        <a class="dropdown-item" href="#">Дизайн фасадов</a>
+                        <a class="dropdown-item" href="#">Архитектурные концепции</a>
+                    </div>
+                </li>
+                <li class="nav-item HOVER">
+                    <span></span>
+                    <a class="nav-link" href="#">3D визуализация</a>
+                </li>
+                <li class="nav-item HOVER">
+                    <span></span>
+                    <a class="nav-link disabled" href="#">Ландшафт</a>
+                </li>
+                <li class="nav-item portfolio-btn HOVER">
+                    <span></span>
+                    <a class="nav-link" href="portfolio.html">Портфолио</a>
+                </li>
+                <li class="nav-item HOVER">
+                    <span></span>
+                    <a class="nav-link disabled" href="#">О нас</a>
+                </li>
+                <li class="nav-item HOVER">
+                    <span></span>
+                    <a class="nav-link disabled" href="#">Контакты</a>
+                </li>
             </ul>
-            <div class="gradient-over-text">
-                <div class="text-description-project">
-                    <p class="carousel-text wb_text3 nabor-texta text-uppercase">КАЧЕСТВЕННЫЙ И ЖЕЛАЕМЫЙ РЕЗУЛЬТАТ: В ЧЕМ СЕКРЕТ?</p>
-                    <p class="carousel-text wb_text3 nabor-texta">Строительство дома – важный и ответственный шаг в жизни каждого клиента, но не меньшее значение имеет выбор подрядчиков для реализации внутреннего оформления вашего жилья. От того, насколько грамотно вы подойдете к выбору будущей креативной команды по воплощению ваших представлений об идеальном пространстве в жизнь, зависит, насколько вас будет радовать результат.</p>
-                    <p class="carousel-text wb_text3 nabor-texta">Мы на протяжении более чем пяти лет занимаемся разработкой и воплощением в жизнь проектов дизайна квартир, домов и коммерческих помещений различного уровня сложности, дизайна интерьера. Поэтому быть уверенными в качестве наших интерьеров и доверять нашим решениям вы можете без сомнения.<br/> Не каждый заказчик вкладывает в понятие «дизайн помещений» что-то большее, чем просто набор красивых картинок. Но такой подход лишает клиента возможности получить «на выходе» эстетичное, эргономичное, комфортное и функциональное пространство для жизни. Поэтому без качественного и грамотного дизайна интерьера не обойтись ни одной квартире, загородному дому или общественному пространству.</p>
-                    <p class="carousel-text wb_text3 nabor-texta">Создавая современный дизайн интерьера квартир и домов, наши дизайнеры стараются привнести в пространство новое воплощение белорусских традиций, эстетики и колорита, выполненной в сочетании с мировыми тенденциями. Именно так создается наш уникальный авторский почерк и любой из интерьеров.</p>
-                    <p class="carousel-text wb_text3 nabor-texta text-uppercase">ДИЗАЙН ИНТЕРЬЕРА: ЦЕНЫ - НЕ ГЛАВНОЕ!</p>
-                    <p class="carousel-text wb_text3 nabor-texta">Момент экономии в потребительском поведении – тоже очень существенный фактор. Но, заказывая дизайн проект квартиры или дома важно понимать, что цена самого проекта даже близко не сравнима с затратами на сами ремонтные работы. Так, средняя стоимость проекта квартиры или частного дома будет составлять не более 3-5% от общей суммы ремонта помещений. При этом, грамотно составленный, продуманный и просчитанный проект позволит вам сэкономить порядка 10-15% от всех затрат на строительство.</p>
+        </div>
+        <!--</div>-->
+
+        <div class="social-media">
+            <a class="nav-item" href="#">
+                <i class="icon icon-instagram"></i>
+            </a>
+            <a class="nav-item" href="#">
+                <i class="icon icon-behance2"></i>
+            </a>
+        </div>
+    </header>
+
+        <div class="main-box project-description">
+        <h5 class="title">Проект <span class="title-project">Contemp</span></h5>
+        <div class="d-flex justify-content-center align-items-top">
+            <img class="d-block planing-project" src="images/planirovka_project.png" alt="Interior design">
+            <div class="description-project">
+                <ul class="description-pgict-list">
+                    <li>Еоличество комнат: 3</li>
+                    <li>Площадь: 98.2 м2</li>
+                    <li>Руковолитель проекта: Сакольчик Максим</li>
+                    <li>Дизайнер Анастасия Шило</li>
+                    <li>Расположение: г.Минск, ул. П. Мстиславца 7</li>
+                    <li>Год: 2017</li>
+                </ul>
+                <div class="gradient-over-text">
+                    <div class="text-description-project">
+                        <p class="carousel-text wb_text3 nabor-texta text-uppercase">КАЧЕСТВЕННЫЙ И ЖЕЛАЕМЫЙ РЕЗУЛЬТАТ: В ЧЕМ СЕКРЕТ?</p>
+                        <p class="carousel-text wb_text3 nabor-texta">Строительство дома – важный и ответственный шаг в жизни каждого клиента, но не меньшее значение имеет выбор подрядчиков для реализации внутреннего оформления вашего жилья. От того, насколько грамотно вы подойдете к выбору будущей креативной команды по воплощению ваших представлений об идеальном пространстве в жизнь, зависит, насколько вас будет радовать результат.</p>
+                        <p class="carousel-text wb_text3 nabor-texta">Мы на протяжении более чем пяти лет занимаемся разработкой и воплощением в жизнь проектов дизайна квартир, домов и коммерческих помещений различного уровня сложности, дизайна интерьера. Поэтому быть уверенными в качестве наших интерьеров и доверять нашим решениям вы можете без сомнения.<br/> Не каждый заказчик вкладывает в понятие «дизайн помещений» что-то большее, чем просто набор красивых картинок. Но такой подход лишает клиента возможности получить «на выходе» эстетичное, эргономичное, комфортное и функциональное пространство для жизни. Поэтому без качественного и грамотного дизайна интерьера не обойтись ни одной квартире, загородному дому или общественному пространству.</p>
+                        <p class="carousel-text wb_text3 nabor-texta">Создавая современный дизайн интерьера квартир и домов, наши дизайнеры стараются привнести в пространство новое воплощение белорусских традиций, эстетики и колорита, выполненной в сочетании с мировыми тенденциями. Именно так создается наш уникальный авторский почерк и любой из интерьеров.</p>
+                        <p class="carousel-text wb_text3 nabor-texta text-uppercase">ДИЗАЙН ИНТЕРЬЕРА: ЦЕНЫ - НЕ ГЛАВНОЕ!</p>
+                        <p class="carousel-text wb_text3 nabor-texta">Момент экономии в потребительском поведении – тоже очень существенный фактор. Но, заказывая дизайн проект квартиры или дома важно понимать, что цена самого проекта даже близко не сравнима с затратами на сами ремонтные работы. Так, средняя стоимость проекта квартиры или частного дома будет составлять не более 3-5% от общей суммы ремонта помещений. При этом, грамотно составленный, продуманный и просчитанный проект позволит вам сэкономить порядка 10-15% от всех затрат на строительство.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="main-box">
-    <div class="project-results-box">
-        <div class="row-slide-project d-flex justify-content-start">
-            <div class="project-slide-item">
-                <a href class="link">
-                    <img src="http://m5-project.by/images/dizain_interiera_gurskogo_primer-142363623653-mini.jpg" alt="pict 1">
-                </a>
-                <div class="caption-project-text">
-                    <p> Some title</p>
+        <div class="main-box">
+            <div class="project-results-box">
+                <div class="row-slide-project d-flex justify-content-start">
+                    <div class="project-slide-item">
+                        <a href class="link">
+                            <img src="http://m5-project.by/images/dizain_interiera_gurskogo_primer-142363623653-mini.jpg" alt="pict 1">
+                        </a>
+                        <div class="caption-project-text">
+                            <p> Some title</p>
+                        </div>
+                    </div>
+                    <div class="project-slide-item">
+                        <a href class="link">
+                            <img src="http://m5-project.by/images/detskaja_oblozhka_small-142401339837-mini.jpg" alt="pict 1">
+                        </a>
+
+                        <div class="caption-project-text">
+                            <p> Надпись Надпись Надпись Надпись Надпись Надпись Надпись Надпись м</p>
+                        </div>
+                    </div>
+                    <div class="project-slide-item">
+                        <a href class="link">
+                            <img src="http://m5-project.by/images/dizain_kvartiri_malinovka_titul_smal-143886746849-mini.jpg" alt="pict 1">
+                        </a>
+
+                        <div class="caption-project-text">
+                            <p> Some title Some title Some title Some title Some title Some title Some title</p>
+                        </div>
+                    </div>
+                    <div class="project-slide-item">
+                        <a href class="link">
+                            <img src="http://m5-project.by/images/spalnya2-142437261659.jpg" alt="pict 1">
+                        </a>
+
+                    </div>
+                    <div class="project-slide-item">
+                        <a href class="link">
+                            <img src="http://m5-project.by/images/dizain_interiera_gurskogo_primer-142363623653-mini.jpg" alt="pict 1">
+                        </a>
+                        <div class="caption-project-text">
+                            <p> Some title</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-slide-project d-flex justify-content-start">
+                    <div class="project-slide-item">
+                        <a href class="link">
+                            <img src="http://m5-project.by/images/dizain_interiera_gurskogo_primer-142363623653-mini.jpg" alt="pict 1">
+                        </a>
+                        <div class="caption-project-text">
+                            <p> Some title</p>
+                        </div>
+                    </div>
+                    <div class="project-slide-item">
+                        <a href class="link">
+                            <img src="http://m5-project.by/images/detskaja_oblozhka_small-142401339837-mini.jpg" alt="pict 1">
+                        </a>
+
+                        <div class="caption-project-text">
+                            <p> Надпись Надпись Надпись Надпись Надпись Надпись Надпись Надпись м</p>
+                        </div>
+                    </div>
+                    <div class="project-slide-item">
+                        <a href class="link">
+                            <img src="http://m5-project.by/images/dizain_kvartiri_malinovka_titul_smal-143886746849-mini.jpg" alt="pict 1">
+                        </a>
+
+                        <div class="caption-project-text">
+                            <p> Some title Some title Some title Some title Some title Some title Some title</p>
+                        </div>
+                    </div>
+                    <div class="project-slide-item">
+                        <a href class="link">
+                            <img src="http://m5-project.by/images/spalnya2-142437261659.jpg" alt="pict 1">
+                        </a>
+
+                    </div>
+                    <div class="project-slide-item">
+                        <a href class="link">
+                            <img src="http://m5-project.by/images/dizain_interiera_gurskogo_primer-142363623653-mini.jpg" alt="pict 1">
+                        </a>
+                        <div class="caption-project-text">
+                            <p> Some title</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-slide-project d-flex justify-content-start">
+                    <div class="project-slide-item">
+                        <a href class="link">
+                            <img src="http://m5-project.by/images/dizain_interiera_gurskogo_primer-142363623653-mini.jpg" alt="pict 1">
+                        </a>
+                    </div>
+                    <div class="project-slide-item empty">
+                        <!--<img src="" alt="pict 1">-->
+                    </div>
+                    <div class="project-slide-item empty">
+                        <!--<img src="" alt="pict 1">-->
+                    </div>
+                    <div class="project-slide-item empty">
+                        <!--<img src="" alt="pict 1">-->
+                    </div>
+                    <div class="project-slide-item empty">
+                        <!--<img src="" alt="pict 1">-->
+                    </div>
+                </div>
+                <div class="input-group flex-row-reverse">
+                    <button class="btn btn-m5-project">Мне понравился проект</button>
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">10</div>
+                    </div>
                 </div>
             </div>
-            <div class="project-slide-item">
-                <a href class="link">
+        </div>
+
+        <div class="main-box comments">
+        <h4 class="title-comments-box">Заказчик о работе:</h4>
+
+        <div class="commnet">
+            <img class="commentator-avatar" src="https://m5-project.by/images/foto_olga_mini-147869367383-mini.jpg" alt="pthoto M5 comment" />
+            <div class="comment-block">
+                <h5 class="name-commentator">Ольга Карионова</h5>
+                <p class="text">К поиску Дизайнера нашей квартиры мы отнеслись со всей серьезностью и обошли немало студий и дизайнеров, потому как мы с мужем очень разносторонние личности, что приводило нас в сомнения возможности составления единого дизайна, который устроил бы нас обоих полностью. Но познакомившись со студией М5 и единожды встретившись с дизайнером Максимом, мы однозначно и сразу сошлись во мнении, что выбор сделан и это наш дизайнер! Работать со студией М5 было невероятно здорово, легко и продуктивно! Хочется поблагодарить всех и каждого, кто принимал участие в создании нашего дизайн-проекта за невероятно кропотливую работу и неповторимый подход, за каждый час, минуту и секунду потраченного времени в создании индивидуального дизайна для нашего семейного гнездышка. Довольны на 100% и советуем всем! Это того стоит! Спасибо огромное за ВСЁ!!!</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="main-box light-them">
+        <div class="title">
+            <h3 class="carousel-title text-center">Похожие проекты</h3>
+        </div>
+        <div class="project-slide-box">
+            <div class="row-slide-project d-flex justify-content-start">
+                <div class="project-slide-item">
+                    <a href="interior-project-1.html">
+                        <img src="http://m5-project.by/images/dizain_interiera_gurskogo_primer-142363623653-mini.jpg" alt="pict 1">
+                    </a>
+                    <div class="caption-project-text">
+                        <p> Some title</p>
+                    </div>
+                </div>
+                <div class="project-slide-item">
                     <img src="http://m5-project.by/images/detskaja_oblozhka_small-142401339837-mini.jpg" alt="pict 1">
-                </a>
-
-                <div class="caption-project-text">
-                    <p> Надпись Надпись Надпись Надпись Надпись Надпись Надпись Надпись м</p>
+                    <div class="caption-project-text">
+                        <p> Надпись Надпись Надпись Надпись Надпись Надпись Надпись Надпись м</p>
+                    </div>
                 </div>
-            </div>
-            <div class="project-slide-item">
-                <a href class="link">
+                <div class="project-slide-item">
                     <img src="http://m5-project.by/images/dizain_kvartiri_malinovka_titul_smal-143886746849-mini.jpg" alt="pict 1">
-                </a>
-
-                <div class="caption-project-text">
-                    <p> Some title Some title Some title Some title Some title Some title Some title</p>
+                    <div class="caption-project-text">
+                        <p> Some title Some title Some title Some title Some title Some title Some title</p>
+                    </div>
                 </div>
-            </div>
-            <div class="project-slide-item">
-                <a href class="link">
+                <div class="project-slide-item">
                     <img src="http://m5-project.by/images/spalnya2-142437261659.jpg" alt="pict 1">
-                </a>
-
-            </div>
-            <div class="project-slide-item">
-                <a href class="link">
-                    <img src="http://m5-project.by/images/dizain_interiera_gurskogo_primer-142363623653-mini.jpg" alt="pict 1">
-                </a>
-                <div class="caption-project-text">
-                    <p> Some title</p>
                 </div>
             </div>
-        </div>
-        <div class="row-slide-project d-flex justify-content-start">
-            <div class="project-slide-item">
-                <a href class="link">
-                    <img src="http://m5-project.by/images/dizain_interiera_gurskogo_primer-142363623653-mini.jpg" alt="pict 1">
-                </a>
-                <div class="caption-project-text">
-                    <p> Some title</p>
-                </div>
-            </div>
-            <div class="project-slide-item">
-                <a href class="link">
-                    <img src="http://m5-project.by/images/detskaja_oblozhka_small-142401339837-mini.jpg" alt="pict 1">
-                </a>
-
-                <div class="caption-project-text">
-                    <p> Надпись Надпись Надпись Надпись Надпись Надпись Надпись Надпись м</p>
-                </div>
-            </div>
-            <div class="project-slide-item">
-                <a href class="link">
-                    <img src="http://m5-project.by/images/dizain_kvartiri_malinovka_titul_smal-143886746849-mini.jpg" alt="pict 1">
-                </a>
-
-                <div class="caption-project-text">
-                    <p> Some title Some title Some title Some title Some title Some title Some title</p>
-                </div>
-            </div>
-            <div class="project-slide-item">
-                <a href class="link">
-                    <img src="http://m5-project.by/images/spalnya2-142437261659.jpg" alt="pict 1">
-                </a>
-
-            </div>
-            <div class="project-slide-item">
-                <a href class="link">
-                    <img src="http://m5-project.by/images/dizain_interiera_gurskogo_primer-142363623653-mini.jpg" alt="pict 1">
-                </a>
-                <div class="caption-project-text">
-                    <p> Some title</p>
-                </div>
-            </div>
-        </div>
-        <div class="row-slide-project d-flex justify-content-start">
-            <div class="project-slide-item">
-                <a href class="link">
-                    <img src="http://m5-project.by/images/dizain_interiera_gurskogo_primer-142363623653-mini.jpg" alt="pict 1">
-                </a>
-            </div>
-            <div class="project-slide-item empty">
-                <!--<img src="" alt="pict 1">-->
-            </div>
-            <div class="project-slide-item empty">
-                <!--<img src="" alt="pict 1">-->
-            </div>
-            <div class="project-slide-item empty">
-                <!--<img src="" alt="pict 1">-->
-            </div>
-            <div class="project-slide-item empty">
-                <!--<img src="" alt="pict 1">-->
-            </div>
-        </div>
-        <div class="input-group flex-row-reverse">
-            <button class="btn btn-m5-project">Мне понравился проект</button>
-            <div class="input-group-prepend">
-                <div class="input-group-text">10</div>
+            <div class="row-slide-project d-flex justify-content-center">
+                <button class="btn btn-m5-project mb-3">еще больше проектов</button>
             </div>
         </div>
     </div>
-</div>
 
-<div class="main-box comments">
-    <h4 class="title-comments-box">Заказчик о работе:</h4>
-
-    <div class="commnet">
-        <img class="commentator-avatar" src="https://m5-project.by/images/foto_olga_mini-147869367383-mini.jpg" alt="pthoto M5 comment" />
-        <div class="comment-block">
-            <h5 class="name-commentator">Ольга Карионова</h5>
-            <p class="text">К поиску Дизайнера нашей квартиры мы отнеслись со всей серьезностью и обошли немало студий и дизайнеров, потому как мы с мужем очень разносторонние личности, что приводило нас в сомнения возможности составления единого дизайна, который устроил бы нас обоих полностью. Но познакомившись со студией М5 и единожды встретившись с дизайнером Максимом, мы однозначно и сразу сошлись во мнении, что выбор сделан и это наш дизайнер! Работать со студией М5 было невероятно здорово, легко и продуктивно! Хочется поблагодарить всех и каждого, кто принимал участие в создании нашего дизайн-проекта за невероятно кропотливую работу и неповторимый подход, за каждый час, минуту и секунду потраченного времени в создании индивидуального дизайна для нашего семейного гнездышка. Довольны на 100% и советуем всем! Это того стоит! Спасибо огромное за ВСЁ!!!</p>
+        <div class="main-box sub-menu-interior">
+        <div class="interior-caption">
+            <h3 class="text-center title">возможно вам будет интересно</h3>
         </div>
-    </div>
-</div>
-
-<div class="main-box light-them">
-    <div class="title">
-        <h3 class="carousel-title text-center">Похожие проекты</h3>
-    </div>
-    <div class="project-slide-box">
-        <div class="row-slide-project d-flex justify-content-start">
-            <div class="project-slide-item">
-                <a href="interior-project-1.html">
-                    <img src="http://m5-project.by/images/dizain_interiera_gurskogo_primer-142363623653-mini.jpg" alt="pict 1">
-                </a>
-                <div class="caption-project-text">
-                    <p> Some title</p>
+        <div class="menu-circle interior d-flex align-items-center justify-content-center">
+            <div class="menu-circle-item-small d-flex align-items-center">
+                <div class="rounded-circle rounded-circle-item text d-flex align-items-center justify-content-center">
+                    <span class="rounded-circle-text rounded-circle">P</span>
                 </div>
+
+                <p class="menu-circle-text one-line">Реализация интерьера</p>
             </div>
-            <div class="project-slide-item">
-                <img src="http://m5-project.by/images/detskaja_oblozhka_small-142401339837-mini.jpg" alt="pict 1">
-                <div class="caption-project-text">
-                    <p> Надпись Надпись Надпись Надпись Надпись Надпись Надпись Надпись м</p>
+            <div class="menu-circle-item-small">
+                <div class="rounded-circle rounded-circle-item  d-flex align-items-center justify-content-center">
+                    <img src="./images/3d_small.png" alt="house"/>
                 </div>
+
+                <p class="menu-circle-text one-line text-center">3D визуализация</p>
             </div>
-            <div class="project-slide-item">
-                <img src="http://m5-project.by/images/dizain_kvartiri_malinovka_titul_smal-143886746849-mini.jpg" alt="pict 1">
-                <div class="caption-project-text">
-                    <p> Some title Some title Some title Some title Some title Some title Some title</p>
+            <div class="menu-circle-item-small">
+                <div class="rounded-circle rounded-circle-item  d-flex align-items-center justify-content-center">
+                    <img src="./images/architecture_small.png" alt="ofice"/>
                 </div>
-            </div>
-            <div class="project-slide-item">
-                <img src="http://m5-project.by/images/spalnya2-142437261659.jpg" alt="pict 1">
-            </div>
-        </div>
-        <div class="row-slide-project d-flex justify-content-center">
-            <button class="btn btn-m5-project mb-3">еще больше проектов</button>
-        </div>
-    </div>
-</div>
 
-<div class="main-box sub-menu-interior">
-    <div class="interior-caption">
-        <h3 class="text-center title">возможно вам будет интересно</h3>
-    </div>
-    <div class="menu-circle interior d-flex align-items-center justify-content-center">
-        <div class="menu-circle-item-small d-flex align-items-center">
-            <div class="rounded-circle rounded-circle-item text d-flex align-items-center justify-content-center">
-                <span class="rounded-circle-text rounded-circle">P</span>
+                <p class="menu-circle-text two-line">архитектурное проктирование</p>
             </div>
+            <div class="menu-circle-item-small">
+                <div class="rounded-circle rounded-circle-item  d-flex align-items-center justify-content-center">
+                    <img src="./images/landscape_small.png" alt="landscape"/>
+                </div>
 
-            <p class="menu-circle-text one-line">Реализация интерьера</p>
-        </div>
-        <div class="menu-circle-item-small">
-            <div class="rounded-circle rounded-circle-item  d-flex align-items-center justify-content-center">
-                <img src="./images/3d_small.png" alt="house"/>
+                <p class="menu-circle-text two-line">Ландшафтный<br/> дизайн</p>
             </div>
+            <div class="menu-circle-item-small">
+                <div class="rounded-circle rounded-circle-item  d-flex align-items-center justify-content-center">
+                    <img src="./images/avtorskiy.png" alt="landscape"/>
+                </div>
 
-            <p class="menu-circle-text one-line text-center">3D визуализация</p>
-        </div>
-        <div class="menu-circle-item-small">
-            <div class="rounded-circle rounded-circle-item  d-flex align-items-center justify-content-center">
-                <img src="./images/architecture_small.png" alt="ofice"/>
+                <p class="menu-circle-text one-line">сопровождение</p>
             </div>
+            <div class="menu-circle-item-small">
+                <div class="rounded-circle rounded-circle-item  d-flex align-items-center justify-content-center">
+                    <img src="./images/realizacija.png" alt="shop"/>
+                </div>
 
-            <p class="menu-circle-text two-line">архитектурное проктирование</p>
-        </div>
-        <div class="menu-circle-item-small">
-            <div class="rounded-circle rounded-circle-item  d-flex align-items-center justify-content-center">
-                <img src="./images/landscape_small.png" alt="landscape"/>
+                <p class="menu-circle-text one-line">реализация интерьера</p>
             </div>
-
-            <p class="menu-circle-text two-line">Ландшафтный<br/> дизайн</p>
-        </div>
-        <div class="menu-circle-item-small">
-            <div class="rounded-circle rounded-circle-item  d-flex align-items-center justify-content-center">
-                <img src="./images/avtorskiy.png" alt="landscape"/>
-            </div>
-
-            <p class="menu-circle-text one-line">сопровождение</p>
-        </div>
-        <div class="menu-circle-item-small">
-            <div class="rounded-circle rounded-circle-item  d-flex align-items-center justify-content-center">
-                <img src="./images/realizacija.png" alt="shop"/>
-            </div>
-
-            <p class="menu-circle-text one-line">реализация интерьера</p>
         </div>
     </div>
-</div>
 
-<!--<div class="main-box footer-panel">-->
-    <!--<p class="float-right">©2013-2018 M5 design studio. All right reserved</p>-->
-<!--</div>-->
-
+    <!--<div class="main-box footer-panel">-->
+        <!--<p class="float-right">©2013-2018 M5 design studio. All right reserved</p>-->
+    <!--</div>-->
 
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script>
-    (function reload() {
-        $('.carousel').carousel({
-            interval: 20000
-        })
-    })();
 
-</script>
-</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script>
+            (function reload() {
+                // $('.carousel').carousel({
+                //     interval: 20000
+                // })
+            })();
+
+        </script>
+    </body>
 </html>

@@ -1941,9 +1941,63 @@ header {
 }
 
 .project-description {
-    padding: 4px 27px;
+    padding: 20px;
     height: 413px;
     overflow: hidden;
+
+    @media (max-width: 899.99px) {
+        height: 100%;
+        padding: 4% 2%;
+        > div {
+            margin-top: -3%;
+        }
+        .title {
+            font-size: 1em;
+
+            .title-project {
+                text-transform: uppercase;
+                font-size: 2em;
+            }
+        }
+
+        .description-pgict-list {
+            padding-left: 14px;
+        }
+
+        .description-project {
+            width: 42%;
+            padding-left: 86px;
+
+            p,li {
+                font-size: 0.5em;
+                font-weight: bold;
+                color: $main-color-first;
+            }
+
+            .text-description-project {
+                height: 237px;
+                overflow-y: scroll;
+
+            }
+            .gradient-over-text {
+                margin-top: -122px;
+                &:before{
+                    content:"";
+                    display:block;
+                    height: 120px;
+                    position:relative;
+                    top: 239px;
+                    background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba($main-color-second, 0.8) 79%)
+                }
+            }
+        }
+
+        .planing-project {
+            width: 30%;
+            height: 30%;
+            margin-left: 20%;
+        }
+    }
 
     @media (min-width: 900px) and (max-width: 1197.98px) {
         > div {
@@ -2160,7 +2214,7 @@ header {
     }
 
     @media (min-width: 1920px) {
-        padding: 22px 44px;
+        padding: 40px;
         height: 666px;
         overflow: hidden;
 
@@ -2222,11 +2276,11 @@ header {
 .project-results-box {
     background: $color-interior;
 
-    @media (min-width: 900px) and (max-width: 1197.98px) {
+    @media (max-width: 1197.98px) {
         .row-slide-project {
             .project-slide-item {
-                width: 387px;
-                height: 342px;
+                width: 25%;
+                height: 30%;
                 overflow: hidden;
 
                 .caption-project-text {
@@ -2239,8 +2293,8 @@ header {
                 }
                 .link {
                     img {
-                        width: 387px;
-                        height: 342px;
+                        width: 100%;
+                        height: 100%;
                     }
                 }
             }

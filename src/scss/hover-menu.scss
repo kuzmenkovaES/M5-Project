@@ -6,7 +6,7 @@
   position: relative;
   display: inline-block;
   color: $main-color-second;
-  overflow: hidden;
+  //overflow: hidden;
 }
 
 .HOVER a {
@@ -23,16 +23,16 @@
   z-index: 0;
   width: 0;
   height: 0;
-  top: 19px;
+  top: 0;
 
   background: transparent;
   color: $main-color-second;
   border: 1px solid rgba($main-color-second, 0);
-  transform: translate(-50%, -50%);
-  transition: width var(--time);
+  //transform: translate(-50%, -50%);
+  //transition: var(--time);
 }
 
 .HOVER:hover span {
-    width: calc(calc(var(--width)*3));
+    //width: calc(var(--width));
     border: 1px solid rgba($main-color-second, 1);
   }

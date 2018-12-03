@@ -1162,8 +1162,7 @@
   --time: 0.5s;
   position: relative;
   display: inline-block;
-  color: #353534;
-  overflow: hidden; }
+  color: #353534; }
 
 .HOVER a {
   position: relative;
@@ -1177,13 +1176,10 @@
   z-index: 0;
   width: 0;
   height: 0;
-  top: 19px;
+  top: 0;
   background: transparent;
   color: #353534;
-  border: 1px solid rgba(53, 53, 52, 0);
-  transform: translate(-50%, -50%);
-  transition: width var(--time); }
+  border: 1px solid rgba(53, 53, 52, 0); }
 
 .HOVER:hover span {
-  width: calc(calc(var(--width)*3));
   border: 1px solid #353534; }
