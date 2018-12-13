@@ -51,13 +51,12 @@
     }
 
     @media (min-width: 1920px) {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
 body {
     position: relative;
-    max-width: 1920px;
     margin-right: auto;
     margin-left: auto;
 
@@ -69,13 +68,60 @@ body {
 
 header {
     padding: 14px 20px 14px 14px;
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 5px 38px rgba(#000, 0.5);
     top: 0;
     z-index: 100;
-    background: $main-color-first;
+    background: rgba($main-color-first, 0.9);
+    transition: padding 1000ms;
+
+    &.full-scree {
+        @media (max-width: 768px) {
+            display: none!important;
+        }
+    }
 
     @media (min-width: 1920px) {
         padding: 14px 40px 14px 14px;
+    }
+
+    .navbar {
+        padding: 0;
+
+        .navbar-collapse.collapse.show {
+            padding: 0px 4px 10px;
+            .menu {
+                margin-top: 0;
+                .nav {
+                    display: block;
+                    .nav-item {
+                        display: block;
+                        .nav-link {
+                            padding: 8px 1px;
+                            text-align: center;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.shrink {
+        padding: 0 7px;
+
+        .navbar-toggler-icon {
+            font-size: 20px;
+        }
+
+        .mobile-menu-items {
+            top: -20px
+        }
+
+        .menu {
+            margin-top: 0;
+        }
     }
 }
 
@@ -86,8 +132,13 @@ header {
     width: 100%;
     height: 100%;
     min-width: 140px;
-    img {
+    .full-logo {
         width: 100%;
+        transition: display 1000ms;
+    }
+
+    .mini-logo {
+        transition: display 1000ms;
     }
 
     @media (max-width: 1259.98px) {
@@ -100,9 +151,9 @@ header {
         width: 90%;
     }
     @media (min-width: 1920px) {
-        width: 300px;
+        width: 258px;
         img {
-            width: 300px;
+            width: 258px;
         }
     }
 }
@@ -120,64 +171,42 @@ header {
             }
         }
 
-        @media (max-width: 1097.98px) {
-            //margin-top: 20px;
+        &:hover {
+            text-decoration: none;
+        }
 
+        @media (max-width: 1097.98px) {
             .icon {
                 font-size: 26px;
-                //&.icon-instagram {
-                //    margin-right: 10px;
-                //}
             }
         }
 
         @media (min-width: 1098px) and (max-width: 1197.98px) {
-            //margin-top: 20px;
             .icon {
                 font-size: 26px;
-                //&.icon-instagram {
-                //    margin-right: 10px;
-                //}
             }
         }
 
         @media (min-width: 1198px) and (max-width: 1297.98px) {
-            //margin-top: 23px;
-
             .icon {
                 font-size: 28px;
-                //&.icon-instagram {
-                //    margin-right: -1px;
-                //}
             }
         }
 
         @media (min-width: 1298px) and (max-width: 1397.98px) {
-            //margin-top: 25px;
-
             .icon {
                 font-size: 28px;
-                //&.icon-instagram {
-                //    margin-right: -1px;
-                //}
             }
         }
 
         @media (min-width: 1398px) and (max-width: 1559.98px) {
-            //margin-top: 28px;
-
             .icon {
                 font-size: 30px;
-                //&.icon-instagram {
-                //    margin-right: -1px;
-                //}
             }
 
         }
 
         @media (min-width: 1560px) and (max-width: 1919.98px) {
-            //margin-top: 22px;
-
             .icon {
                 font-size: 38px;
             }
@@ -187,7 +216,7 @@ header {
             margin-top: 25%;
 
             .icon {
-                font-size: 45px;
+                font-size: 38px;
             }
         }
     }
@@ -196,6 +225,10 @@ header {
 .menu {
     display: inline-block;
     margin-top: -14px;
+
+    @media (max-width: 1660px) {
+        margin-left: -12%;
+    }
 
     .nav-item {
         text-transform: uppercase;
@@ -209,7 +242,7 @@ header {
             padding: 8px 20px;
 
             @media (min-width: 1920px) {
-                font-size: 18px;
+                font-size: 16px;
                 padding: 14px 20px;
                 letter-spacing: 0.3px;
             }
@@ -325,11 +358,14 @@ header {
     width: 30%;
     right: 20px;
     left: auto;
-    top: 20px;
+    top: 110px;
+
+    @media (min-width: 1420px) {
+        top: 160px;
+    }
 
     @media (min-width: 1920px) {
         right: 40px;
-        top: 40px;
     }
 
     .pre-title {
@@ -345,7 +381,6 @@ header {
         text-align: right;
         margin-top: -6px;
         margin-right: 2px;
-        margin-bottom: 20px;
     }
 
     .know-more {
@@ -378,12 +413,11 @@ header {
         .carousel-title {
             margin-top: -6px;
             margin-right: 2px;
-            margin-bottom: 16px;
         }
 
         .carousel-text {
-            font-size: 8px;
-            line-height: 8px;
+            font-size: 0.7em;
+            line-height: 1.5;
             letter-spacing: 0.12px;
             margin-bottom: 7px;
         }
@@ -411,7 +445,6 @@ header {
             text-align: right;
             margin-top: -8px;
             margin-right: 13px;
-            margin-bottom: 13px;
         }
 
         .carousel-text {
@@ -451,7 +484,6 @@ header {
             font-size: 31px;
             margin-top: -8px;
             margin-right: 13px;
-            margin-bottom: 17px;
         }
 
         .carousel-text {
@@ -491,7 +523,6 @@ header {
             font-size: 35px;
             margin-top: -6px;
             margin-right: 2px;
-            margin-bottom: 20px;
         }
 
         .carousel-text {
@@ -525,7 +556,6 @@ header {
             font-size: 37px;
             margin-top: -4px;
             margin-right: 10px;
-            margin-bottom: 17px;
         }
 
         .carousel-text {
@@ -562,7 +592,6 @@ header {
             font-size: 41px;
             margin-top: -8px;
             margin-right: 13px;
-            margin-bottom: 19px;
         }
 
         .carousel-text {
@@ -598,7 +627,6 @@ header {
             font-size: 50px;
             margin-top: -8px;
             margin-right: 13px;
-            margin-bottom: 27px;
         }
 
         .carousel-text {
@@ -805,6 +833,71 @@ header {
     }
 }
 
+.sm-devices {
+    color: $main-color-first;
+    padding: 10px 14px;
+    font-size: 15px;
+    line-height: 1.5;
+
+    p {
+        font-size: 13px;
+        line-height: 1.3;
+    }
+
+    .title {
+        padding-left: 0;
+        .pre-title,
+        .carousel-title {
+            text-align: start;
+            margin-bottom: 5px;
+        }
+    }
+
+    .know-more {
+        font-size: 16px;
+        line-height: 16px;
+
+        .hide-show-link {
+            color: $main-color-first;
+        }
+    }
+
+    .link-project-img {
+        height: 270px;
+    }
+
+    .link-project-box {
+        position: relative;
+        margin-bottom: 40px;
+
+        .caption-project-text {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            padding: 5px 15px;
+            background: linear-gradient(to bottom, rgba(#000, 0.4) 17%, rgba(#000, 0));
+        }
+    }
+
+    .contact-box {
+        .carousel-caption {
+            width: 100%;
+            position: initial;
+
+            .contact-text {
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+.navbar-toggler-icon {
+    font-size: 23px;
+}
+
 .menu-circle-box {
     .title {
         @media (min-width: 1920px) {
@@ -841,7 +934,6 @@ header {
     .menu-circle-text {
         text-transform: uppercase;
         text-align: center;
-        word-break: break-word;
     }
 
     @media (max-width: 907.98px) {
@@ -903,8 +995,8 @@ header {
                     height: 110px;
                 }
 
-                .rounded-circle-text {
-                    font-size: 85px;
+                span.rounded-circle-text {
+                    font-size: 45px;
                     color: $main-color-first;
                 }
             }
@@ -975,10 +1067,29 @@ header {
                 width: 75%;
             }
 
+            &.text-marker {
+                margin-right: -16px;
+            }
+
             .rounded-circle-item {
                 width: 90px;
                 height: 80px;
                 margin-right: 0;
+
+                &.rounded-circle.text {
+                    width: 70px;
+                    height: 70px;
+                    margin-right: 26px;
+                }
+
+                span.rounded-circle-text {
+                    font-size: 40px;
+                    margin-top: 0;
+
+                    &.visual-design {
+                        margin-left: 4px;
+                    }
+                }
             }
 
             .menu-circle-text {
@@ -1000,8 +1111,8 @@ header {
 
             &:last-child {
                 .menu-circle-text {
-                    width: 130%;
-                    left: -8px;
+                    //width: 130%;
+                    //left: -8px;
                 }
             }
         }
@@ -1330,11 +1441,13 @@ header {
 }
 
 .line-gradient {
-    height: 1px;
+    height: 1.1px;
     background: linear-gradient(to right, $main-color-second 17%, rgba($main-color-first, 0.2));
-    @media (min-width: 1420px) {
-        height: 2px;
-    }
+}
+
+.line-gradient-revers {
+    height: 1.1px;
+    background: linear-gradient(to left, $main-color-second 17%, rgba($main-color-first, 0.2));
 }
 
 .last-projects {
@@ -1374,6 +1487,8 @@ header {
         .project-slide-item {
             position: relative;
             width: 25%;
+            border: 1px solid $main-color-second;
+            border-right: 0;
 
             img {
                 width: 100%;
@@ -1579,6 +1694,9 @@ header {
 }
 
 .coordinates {
+    &.d-md-block .carousel-caption {
+        background: rgba(#000, 0.3);
+    }
     @media (max-width: 1097.98px) {
         padding: 47px 0 0 0;
         .carousel-title {
@@ -1639,10 +1757,6 @@ header {
         width: 100%;
         margin-left: -1px;
         margin-top: 1px;
-    }
-
-    .carousel-caption {
-       background: rgba(#000, 0.3);
     }
 
     .contact {
@@ -2857,47 +2971,6 @@ header {
                 margin-left: 2px;
             }
         }
-
-        .interior {
-            padding-top: 40px;
-
-            .menu-circle-item-small {
-                margin-top: -60px;
-
-                &:first-child {
-                    margin-left: 75px;
-                    margin-right: 40px;
-                }
-
-                .rounded-circle-item {
-                    img {
-                        width: 95px;
-                        margin-right: 40px;
-                    }
-
-                    &.text {
-                        width: 96px;
-                        height: 96px;
-
-                        .rounded-circle-text {
-                            font-size: 64px;
-                            font-weight: bold;
-                        }
-                    }
-
-
-                }
-
-                .menu-circle-text {
-                    font-size: 9px;
-                    text-align: inherit;
-
-                    &.one-line {
-                        //width: 127%;
-                    }
-                }
-            }
-        }
     }
 
     @media (min-width: 1198px) and (max-width: 1359.98px) {
@@ -2909,46 +2982,6 @@ header {
             }
         }
 
-        .interior {
-            padding-top: 40px;
-
-            .menu-circle-item-small {
-                margin-top: -60px;
-
-                &:first-child {
-                    margin-left: 75px;
-                    margin-right: 40px;
-                }
-
-                .rounded-circle-item {
-                    img {
-                        width: 95px;
-                        margin-right: 40px;
-                    }
-
-                    &.text {
-                        width: 96px;
-                        height: 96px;
-
-                        .rounded-circle-text {
-                            font-size: 64px;
-                            font-weight: bold;
-                        }
-                    }
-
-
-                }
-
-                .menu-circle-text {
-                    font-size: 9px;
-                    text-align: inherit;
-
-                    &.one-line {
-                        //width: 127%;
-                    }
-                }
-            }
-        }
     }
 
     @media (min-width: 1360px) and (max-width: 1559.98px) {
@@ -2962,55 +2995,6 @@ header {
                 letter-spacing: 0.3px;
             }
         }
-
-        .menu-circle.interior {
-            padding-top: 40px;
-
-            .menu-circle-item-small {
-                margin-top: 50px;
-
-                &:first-child {
-                    margin-left: -115px;
-                }
-
-                .rounded-circle-item {
-                    margin-right: 78px;
-                    width: 150px;
-                    height: 150px;
-
-                    &.text {
-                        width: 150px;
-                        height: 150px;
-
-                        .rounded-circle-text {
-                            font-size: 100px;
-                            font-weight: bold;
-                        }
-                    }
-
-                    img {
-                        width: 155px;
-                    }
-                }
-
-                .menu-circle-text {
-                    font-size: 16px;
-                    width: 190px;
-                    text-align: center;
-
-                    &.one-line {
-                        bottom: -56px;
-                        left: -17px;
-                    }
-
-                    &.two-line {
-                        bottom: -68px;
-                        line-height: 19px;
-                        width: 150px;
-                    }
-                }
-            }
-        }
     }
 
     @media (min-width: 1560px) and (max-width: 1919.98px) {
@@ -3022,55 +3006,6 @@ header {
                 font-size: 50px;
                 margin-left: 32px;
                 letter-spacing: 0.3px;
-            }
-        }
-
-        .menu-circle.interior {
-            padding-top: 40px;
-
-            .menu-circle-item-small {
-                margin-top: 50px;
-
-                &:first-child {
-                    margin-left: -115px;
-                }
-
-                .rounded-circle-item {
-                    margin-right: 78px;
-                    width: 150px;
-                    height: 150px;
-
-                    &.text {
-                        width: 150px;
-                        height: 150px;
-
-                        .rounded-circle-text {
-                            font-size: 100px;
-                            font-weight: bold;
-                        }
-                    }
-
-                    img {
-                        width: 155px;
-                    }
-                }
-
-                .menu-circle-text {
-                    font-size: 16px;
-                    width: 190px;
-                    text-align: center;
-
-                    &.one-line {
-                        bottom: -56px;
-                        left: -17px;
-                    }
-
-                    &.two-line {
-                        bottom: -68px;
-                        line-height: 19px;
-                        width: 150px;
-                    }
-                }
             }
         }
     }
@@ -3087,54 +3022,7 @@ header {
             }
         }
 
-        .menu-circle.interior {
-            padding-top: 40px;
 
-            .menu-circle-item-small {
-                margin-top: 50px;
-
-                &:first-child {
-                    margin-left: -115px;
-                }
-
-                .rounded-circle-item {
-                    margin-right: 78px;
-                    width: 150px;
-                    height: 150px;
-
-                    &.text {
-                        width: 150px;
-                        height: 150px;
-
-                        .rounded-circle-text {
-                            font-size: 100px;
-                            font-weight: bold;
-                        }
-                    }
-
-                    img {
-                        width: 155px;
-                    }
-                }
-
-                .menu-circle-text {
-                    font-size: 16px;
-                    width: 190px;
-                    text-align: center;
-
-                    &.one-line {
-                        bottom: -56px;
-                        left: -17px;
-                    }
-
-                    &.two-line {
-                        bottom: -68px;
-                        line-height: 19px;
-                        width: 150px;
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -3743,7 +3631,7 @@ header {
     overflow:hidden;
     animation-name: showLink;
     animation-delay: 0ms;
-    animation-duration: 5000ms;
+    animation-duration: 4000ms;
     animation-fill-mode: forwards;
 }
 
@@ -3780,6 +3668,7 @@ header {
 
 @keyframes showLink {
   0% {   opacity: 0;}
+  95% {  opacity: 0;}
   100% { opacity: 1;}
 }
 
@@ -3904,4 +3793,13 @@ header {
     width: 260px;
     height: 260px;
     background: rgba(#fff, 0.1);
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.nabor-texta {
+    height: 0;
+    overflow: hidden;
 }

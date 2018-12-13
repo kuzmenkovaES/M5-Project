@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
-    "jquery-viewport-checker": "^1.8.8"
+    "gsap": "^2.0.2",
+    "splittext": "^2.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.24.7",
