@@ -288,20 +288,17 @@ header {
       width: 10%; } }
   @media (min-width: 1260px) and (max-width: 1559.98px) {
     .navbar-brand {
-      width: 17%; } }
-  @media (min-width: 1560px) and (max-width: 1919.98px) {
-    .navbar-brand {
-      width: 90%; } }
-  @media (min-width: 1920px) and (max-width: 2219.98px) {
+      width: 10%; } }
+  @media (min-width: 1560px) and (max-width: 2219.98px) {
     .navbar-brand {
       width: 258px;
       max-height: 90px; }
-      .navbar-brand img {
+      .navbar-brand .full-logo {
         width: 258px; } }
   @media (min-width: 2220px) {
     .navbar-brand {
       width: 258px; }
-      .navbar-brand img {
+      .navbar-brand .full-logo {
         width: 100%; } }
 
 .social-media .nav-item {
@@ -2480,14 +2477,14 @@ header {
   position: relative;
   animation-name: animateLeft;
   animation-delay: 0ms;
-  animation-duration: 2800ms;
+  animation-duration: 1000ms;
   animation-fill-mode: both; }
 
 .swipe-left-text-second {
   position: relative;
   animation-name: animateLeft;
   animation-delay: 0ms;
-  animation-duration: 4000ms;
+  animation-duration: 2000ms;
   animation-fill-mode: both; }
 
 .swipe-top-text {
