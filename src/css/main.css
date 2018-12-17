@@ -210,9 +210,12 @@
   @media (min-width: 1560px) and (max-width: 1919.98px) {
     * {
       font-size: 15px; } }
-  @media (min-width: 1920px) {
+  @media (min-width: 1920px) and (max-width: 2219.98px) {
     * {
       font-size: 16px; } }
+  @media (min-width: 2220px) {
+    * {
+      font-size: 1vw; } }
 
 body {
   position: relative;
@@ -234,9 +237,12 @@ header {
   @media (max-width: 768px) {
     header.full-scree {
       display: none !important; } }
-  @media (min-width: 1920px) {
+  @media (min-width: 1920px) and (max-width: 2219.98px) {
     header {
       padding: 14px 40px 14px 14px; } }
+  @media (min-width: 2220px) {
+    header {
+      padding: 1vw 2vw 1vw; } }
   header .navbar {
     padding: 0; }
     header .navbar .navbar-collapse.collapse.show {
@@ -252,7 +258,10 @@ header {
               text-align: center;
               font-size: 16px; }
   header.shrink {
-    padding: 0 7px; }
+    padding: 2px 7px; }
+    @media (min-width: 2220px) {
+      header.shrink {
+        padding: 10px 2vw; } }
     header.shrink .navbar-toggler-icon {
       font-size: 20px; }
     header.shrink .mobile-menu-items {
@@ -262,8 +271,6 @@ header {
 
 .navbar-brand {
   padding: 0;
-  max-width: 300px;
-  max-height: 90px;
   width: 100%;
   height: 100%;
   min-width: 140px; }
@@ -271,7 +278,11 @@ header {
     width: 100%;
     transition: display 1000ms; }
   .navbar-brand .mini-logo {
+    width: 45px;
     transition: display 1000ms; }
+    @media (min-width: 2220px) {
+      .navbar-brand .mini-logo {
+        width: 100%; } }
   @media (max-width: 1259.98px) {
     .navbar-brand {
       width: 10%; } }
@@ -281,11 +292,17 @@ header {
   @media (min-width: 1560px) and (max-width: 1919.98px) {
     .navbar-brand {
       width: 90%; } }
-  @media (min-width: 1920px) {
+  @media (min-width: 1920px) and (max-width: 2219.98px) {
+    .navbar-brand {
+      width: 258px;
+      max-height: 90px; }
+      .navbar-brand img {
+        width: 258px; } }
+  @media (min-width: 2220px) {
     .navbar-brand {
       width: 258px; }
       .navbar-brand img {
-        width: 258px; } }
+        width: 100%; } }
 
 .social-media .nav-item {
   display: inline-block;
@@ -313,11 +330,16 @@ header {
   @media (min-width: 1560px) and (max-width: 1919.98px) {
     .social-media .nav-item .icon {
       font-size: 38px; } }
-  @media (min-width: 1920px) {
+  @media (min-width: 1920px) and (max-width: 2219.98px) {
     .social-media .nav-item {
       margin-top: 25%; }
       .social-media .nav-item .icon {
         font-size: 38px; } }
+  @media (min-width: 2220px) {
+    .social-media .nav-item {
+      margin-top: 25%; }
+      .social-media .nav-item .icon {
+        font-size: 2vw; } }
 
 .menu {
   display: inline-block;
@@ -334,11 +356,15 @@ header {
       font-size: 1em;
       letter-spacing: 0.1px;
       padding: 8px 20px; }
-      @media (min-width: 1920px) {
+      @media (min-width: 1920px) and (max-width: 2219.98px) {
         .menu .nav-item .nav-link {
           font-size: 16px;
           padding: 14px 20px;
           letter-spacing: 0.3px; } }
+      @media (min-width: 2220px) {
+        .menu .nav-item .nav-link {
+          font-size: 1vw;
+          padding: 1vw 1vw; } }
       .menu .nav-item .nav-link:hover + .dropdown-menu {
         display: block; }
     .menu .nav-item.portfolio-btn {
@@ -410,6 +436,8 @@ header {
 
 .slider-panel {
   width: 100%; }
+  .slider-panel .carousel-item img {
+    height: 100vh; }
 
 .carousel-caption {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 17%, rgba(0, 0, 0, 0));
@@ -420,9 +448,13 @@ header {
   @media (min-width: 1420px) {
     .carousel-caption {
       top: 160px; } }
-  @media (min-width: 1920px) {
+  @media (min-width: 1920px) and (max-width: 2219.98px) {
     .carousel-caption {
       right: 40px; } }
+  @media (min-width: 2220px) {
+    .carousel-caption {
+      right: 2vw;
+      top: 7vw; } }
   .carousel-caption .pre-title {
     font-size: 10px;
     text-transform: uppercase;
@@ -586,7 +618,7 @@ header {
           letter-spacing: 1px; }
       .carousel-caption p {
         font-size: 18.3px; } }
-  @media (min-width: 1920px) {
+  @media (min-width: 1920px) and (max-width: 2219.98px) {
     .carousel-caption {
       margin: 0;
       padding: 35px 42px; }
@@ -605,6 +637,29 @@ header {
         bottom: 40px; }
         .carousel-caption .know-more a {
           font-size: 18.3px;
+          letter-spacing: 1px; }
+      .carousel-caption p {
+        font-size: 18.3px; } }
+  @media (min-width: 2220px) {
+    .carousel-caption {
+      margin: 0;
+      padding: 2vw 1.5vw; }
+      .carousel-caption .pre-title {
+        font-size: 1.1vw;
+        margin: 0 12px; }
+      .carousel-caption .carousel-title {
+        font-size: 3vw;
+        margin-top: -8px;
+        margin-right: 13px; }
+      .carousel-caption .carousel-text {
+        font-size: 0.8vw;
+        line-height: 1vw;
+        margin-bottom: 7px; }
+      .carousel-caption .know-more {
+        bottom: 2vw;
+        right: 1.5vw; }
+        .carousel-caption .know-more a {
+          font-size: 1.3vw;
           letter-spacing: 1px; }
       .carousel-caption p {
         font-size: 18.3px; } }
@@ -715,8 +770,10 @@ header {
       font-size: 42px;
       margin-top: -18px;
       margin-right: 0;
-      margin-bottom: 16px; } }
-  @media (min-width: 1920px) {
+      margin-bottom: 16px; }
+    .main-box .btn-m5-project {
+      font-size: 22px; } }
+  @media (min-width: 1920px) and (max-width: 2219.98px) {
     .main-box .pre-title {
       font-size: 18px;
       text-transform: uppercase;
@@ -728,7 +785,18 @@ header {
       text-align: right;
       margin-top: -18px;
       margin-right: 0px;
-      margin-bottom: 16px; } }
+      margin-bottom: 16px; }
+    .main-box .btn-m5-project {
+      font-size: 22px; } }
+  @media (min-width: 2220px) {
+    .main-box .pre-title {
+      font-size: 1vw;
+      margin: 1vw 1.5vw 0; }
+    .main-box .carousel-title {
+      font-size: 2vw;
+      margin: 0 1.5vw; }
+    .main-box .btn-m5-project {
+      font-size: 1vw; } }
 
 .sm-devices {
   color: #fff;
@@ -776,8 +844,7 @@ header {
 
 .menu-circle {
   color: #fff;
-  height: 428px;
-  padding-left: 16%; }
+  height: 428px; }
   .menu-circle .rounded-circle-item {
     font-weight: bold; }
     .menu-circle .rounded-circle-item.text {
@@ -1131,8 +1198,10 @@ header {
     border: 1px solid #353534;
     border-right: 0; }
     .project-slide-box .row-slide-project .project-slide-item img {
-      width: 100%;
-      max-height: 428px; }
+      width: 100%; }
+      @media (max-width: 2220px) {
+        .project-slide-box .row-slide-project .project-slide-item img {
+          max-height: 428px; } }
     .project-slide-box .row-slide-project .project-slide-item .caption-project-text {
       position: absolute; }
       .project-slide-box .row-slide-project .project-slide-item .caption-project-text p {
@@ -1200,7 +1269,6 @@ header {
           font-weight: bolder;
           line-height: 13px; }
     .project-slide-box .row-slide-project .btn-m5-project {
-      margin: 12px 0px 13px 19px;
       padding: 0px 6px;
       font-size: 15px;
       letter-spacing: 1px; } }
@@ -1217,7 +1285,6 @@ header {
           font-weight: bolder;
           line-height: 13px; }
     .project-slide-box .row-slide-project .btn-m5-project {
-      margin: 17px 0 0;
       padding: 0 10px;
       font-size: 17px;
       letter-spacing: 0.5px; } }
@@ -1234,11 +1301,10 @@ header {
           font-weight: bolder;
           line-height: 13px; }
     .project-slide-box .row-slide-project .btn-m5-project {
-      margin: 17px 0 0;
       padding: 0 12px;
       font-size: 18px;
       letter-spacing: 0.6px; } }
-  @media (min-width: 1920px) {
+  @media (min-width: 1920px) and (max-width: 2219.98px) {
     .project-slide-box .row-slide-project .project-slide-item {
       height: 428px; }
       .project-slide-box .row-slide-project .project-slide-item img {
@@ -1251,10 +1317,19 @@ header {
           font-weight: bolder;
           line-height: 13px; }
     .project-slide-box .row-slide-project .btn-m5-project {
-      margin: 17px 0 0;
       padding: 0px 10px;
       font-size: 23px;
       letter-spacing: 0.2px; } }
+  @media (min-width: 2220px) {
+    .project-slide-box .row-slide-project .project-slide-item .caption-project-text {
+      bottom: 0;
+      padding: 0 1vw; }
+      .project-slide-box .row-slide-project .project-slide-item .caption-project-text p {
+        font-size: 1vw;
+        font-weight: bolder; }
+    .project-slide-box .row-slide-project .btn-m5-project {
+      padding: 0 0.5vw;
+      font-size: 1vw; } }
 
 .coordinates.d-md-block .carousel-caption {
   background: rgba(0, 0, 0, 0.3); }
@@ -1303,9 +1378,7 @@ header {
 .contact-box {
   position: relative; }
   .contact-box img {
-    width: 100%;
-    margin-left: -1px;
-    margin-top: 1px; }
+    width: 100%; }
   .contact-box .contact {
     width: 29%;
     height: 84%;
@@ -1428,13 +1501,9 @@ header {
         text-transform: inherit; }
       .contact-box .contact .btn-group-contact .contact-inst .icon-instagram {
         font-size: 36px; } }
-  @media (min-width: 1920px) {
-    .contact-box img {
-      width: 104%;
-      margin-left: -63px;
-      margin-top: 1px; }
+  @media (min-width: 1920px) and (max-width: 2219.98px) {
     .contact-box .contact {
-      width: 559px;
+      width: 30%;
       top: 40px;
       padding: 28px 48px; }
       .contact-box .contact p {
@@ -1453,6 +1522,27 @@ header {
         text-transform: inherit; }
       .contact-box .contact .btn-group-contact .contact-inst .icon-instagram {
         font-size: 43px; } }
+  @media (min-width: 2220px) {
+    .contact-box .contact {
+      width: 30%;
+      top: 40px;
+      padding: 1vw 2vw; }
+      .contact-box .contact p {
+        margin: 0;
+        line-height: 1vw;
+        font-size: 1vw; }
+        .contact-box .contact p.contact-article {
+          margin: 29px 0 20px;
+          font-size: 1.1vw; }
+        .contact-box .contact p.contact-article-partner {
+          margin: 56px 0 7px;
+          font-size: 1.1vw; }
+      .contact-box .contact .btn-group-contact .btn-m5-project {
+        padding: 1px 8px;
+        font-size: 1.1vw;
+        text-transform: inherit; }
+      .contact-box .contact .btn-group-contact .contact-inst .icon-instagram {
+        font-size: 2vw; } }
 
 .footer-panel {
   height: 30px;

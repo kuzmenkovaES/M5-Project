@@ -50,8 +50,12 @@
         font-size: 15px;
     }
 
-    @media (min-width: 1920px) {
+    @media (min-width: 1920px) and (max-width: 2219.98px) {
         font-size: 16px;
+    }
+
+    @media (min-width: 2220px) {
+        font-size: 1vw;
     }
 }
 
@@ -82,8 +86,12 @@ header {
         }
     }
 
-    @media (min-width: 1920px) {
+    @media (min-width: 1920px) and (max-width: 2219.98px) {
         padding: 14px 40px 14px 14px;
+    }
+
+    @media (min-width: 2220px) {
+        padding: 1vw 2vw 1vw;
     }
 
     .navbar {
@@ -109,7 +117,11 @@ header {
     }
 
     &.shrink {
-        padding: 0 7px;
+        padding: 2px 7px;
+
+        @media (min-width: 2220px) {
+          padding: 10px 2vw;
+        }
 
         .navbar-toggler-icon {
             font-size: 20px;
@@ -127,18 +139,22 @@ header {
 
 .navbar-brand {
     padding: 0;
-    max-width: 300px;
-    max-height: 90px;
     width: 100%;
     height: 100%;
     min-width: 140px;
+
     .full-logo {
         width: 100%;
         transition: display 1000ms;
     }
 
     .mini-logo {
+        width: 45px;
         transition: display 1000ms;
+
+      @media (min-width: 2220px) {
+        width: 100%;
+      }
     }
 
     @media (max-width: 1259.98px) {
@@ -150,10 +166,17 @@ header {
     @media (min-width: 1560px) and (max-width: 1919.98px) {
         width: 90%;
     }
-    @media (min-width: 1920px) {
+    @media (min-width: 1920px) and (max-width: 2219.98px) {
         width: 258px;
+        max-height: 90px;
         img {
             width: 258px;
+        }
+    }
+    @media (min-width: 2220px) {
+        width: 258px;
+        img {
+          width: 100%;
         }
     }
 }
@@ -212,11 +235,19 @@ header {
             }
         }
 
-        @media (min-width: 1920px) {
+        @media (min-width: 1920px) and (max-width: 2219.98px) {
             margin-top: 25%;
 
             .icon {
                 font-size: 38px;
+            }
+        }
+
+        @media (min-width: 2220px) {
+            margin-top: 25%;
+
+            .icon {
+              font-size: 2vw;
             }
         }
     }
@@ -241,10 +272,15 @@ header {
             letter-spacing: 0.1px;
             padding: 8px 20px;
 
-            @media (min-width: 1920px) {
+            @media (min-width: 1920px) and (max-width: 2219.98px) {
                 font-size: 16px;
                 padding: 14px 20px;
                 letter-spacing: 0.3px;
+            }
+
+            @media (min-width: 2220px) {
+              font-size: 1vw;
+              padding: 1vw 1vw;
             }
 
             &:hover {
@@ -351,6 +387,13 @@ header {
 
 .slider-panel {
     width: 100%;
+
+    .carousel-item {
+      img{
+        height: 100vh;
+      }
+
+    }
 }
 
 .carousel-caption {
@@ -364,8 +407,13 @@ header {
         top: 160px;
     }
 
-    @media (min-width: 1920px) {
+    @media (min-width: 1920px) and (max-width: 2219.98px) {
         right: 40px;
+    }
+
+    @media (min-width: 2220px) {
+        right: 2vw;
+        top: 7vw;
     }
 
     .pre-title {
@@ -614,7 +662,7 @@ header {
         }
     }
 
-    @media (min-width: 1920px) {
+    @media (min-width: 1920px) and (max-width: 2219.98px) {
         margin: 0;
         padding: 35px 42px;
 
@@ -640,6 +688,42 @@ header {
 
             a {
                 font-size: 18.3px;
+                letter-spacing: 1px;
+            }
+        }
+
+        p {
+            font-size: 18.3px;
+        }
+    }
+
+    @media (min-width: 2220px) {
+        margin: 0;
+        padding: 2vw 1.5vw;
+
+        .pre-title {
+            font-size: 1.1vw;
+            margin: 0 12px;
+        }
+
+        .carousel-title {
+            font-size: 3vw;
+            margin-top: -8px;
+            margin-right: 13px;
+        }
+
+        .carousel-text {
+            font-size: 0.8vw;
+            line-height: 1vw;
+            margin-bottom: 7px;
+        }
+
+        .know-more {
+            bottom: 2vw;
+            right: 1.5vw;
+
+            a {
+                font-size: 1.3vw;
                 letter-spacing: 1px;
             }
         }
@@ -812,9 +896,13 @@ header {
             margin-right: 0;
             margin-bottom: 16px;
         }
+
+        .btn-m5-project {
+            font-size: 22px;
+        }
     }
 
-    @media (min-width: 1920px) {
+    @media (min-width: 1920px) and (max-width: 2219.98px) {
         .pre-title {
             font-size: 18px;
             text-transform: uppercase;
@@ -829,6 +917,24 @@ header {
             margin-top: -18px;
             margin-right: 0px;
             margin-bottom: 16px;
+        }
+        .btn-m5-project {
+            font-size: 22px;
+        }
+    }
+
+    @media (min-width: 2220px) {
+        .pre-title {
+            font-size: 1vw;
+            margin: 1vw 1.5vw 0;
+        }
+
+        .carousel-title {
+            font-size: 2vw;
+            margin: 0 1.5vw;
+        }
+        .btn-m5-project {
+            font-size: 1vw;
         }
     }
 }
@@ -909,7 +1015,6 @@ header {
 .menu-circle {
     color: $main-color-first;
     height: 428px;
-    padding-left: 16%;
 
     .rounded-circle-item {
         font-weight: bold;
@@ -1492,7 +1597,9 @@ header {
 
             img {
                 width: 100%;
-                max-height: 428px;
+                @media (max-width: 2220px) {
+                  max-height: 428px;
+                }
             }
 
             .caption-project-text {
@@ -1603,7 +1710,6 @@ header {
             }
 
             .btn-m5-project {
-                margin: 12px 0px 13px 19px;
                 padding: 0px 6px;
                 font-size: 15px;
                 letter-spacing: 1px;
@@ -1630,14 +1736,13 @@ header {
             }
 
             .btn-m5-project {
-                margin: 17px 0 0;
                 padding: 0 10px;
                 font-size: 17px;
                 letter-spacing: 0.5px;
             }
         }
 
-        @media (min-width: 1560px)  and (max-width: 1919.98px) {
+        @media (min-width: 1560px) and (max-width: 1919.98px) {
             .project-slide-item {
                 height: 352px;
 
@@ -1657,14 +1762,13 @@ header {
             }
 
             .btn-m5-project {
-                margin: 17px 0 0;
                 padding: 0 12px;
                 font-size: 18px;
                 letter-spacing: 0.6px;
             }
         }
 
-        @media (min-width: 1920px) {
+        @media (min-width: 1920px) and (max-width: 2219.98px) {
             .project-slide-item {
                 height: 428px;
 
@@ -1684,10 +1788,27 @@ header {
             }
 
             .btn-m5-project {
-                margin: 17px 0 0;
                 padding: 0px 10px;
                 font-size: 23px;
                 letter-spacing: 0.2px;
+            }
+        }
+
+        @media (min-width: 2220px) {
+            .project-slide-item {
+                .caption-project-text {
+                    bottom: 0;
+                    padding: 0 1vw;
+                    p {
+                        font-size: 1vw;
+                        font-weight: bolder;
+                    }
+                }
+            }
+
+            .btn-m5-project {
+                padding: 0 0.5vw;
+                font-size: 1vw;
             }
         }
     }
@@ -1755,8 +1876,6 @@ header {
 
     img {
         width: 100%;
-        margin-left: -1px;
-        margin-top: 1px;
     }
 
     .contact {
@@ -1950,7 +2069,7 @@ header {
         }
     }
 
-    @media (min-width: 1560px)  and (max-width: 1919.98px) {
+    @media (min-width: 1560px) and (max-width: 1919.98px) {
         .contact {
             padding: 21px 41px;
 
@@ -1985,14 +2104,10 @@ header {
         }
     }
 
-    @media (min-width: 1920px) {
-        img {
-            width: 104%;
-            margin-left: -63px;
-            margin-top: 1px;
-        }
+    @media (min-width: 1920px) and (max-width: 2219.98px) {
+
         .contact {
-            width: 559px;
+            width: 30%;
             top: 40px;
             padding: 28px 48px;
 
@@ -2021,6 +2136,43 @@ header {
                 .contact-inst {
                     .icon-instagram {
                         font-size: 43px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 2220px) {
+        .contact {
+            width: 30%;
+            top: 40px;
+            padding: 1vw 2vw;
+
+            p {
+                margin: 0;
+                line-height: 1vw;
+                font-size: 1vw;
+
+                &.contact-article {
+                    margin: 29px 0 20px;
+                    font-size: 1.1vw;
+                }
+
+                &.contact-article-partner {
+                    margin: 56px 0 7px;
+                    font-size: 1.1vw;
+                }
+            }
+
+            .btn-group-contact {
+                .btn-m5-project {
+                    padding: 1px 8px;
+                    font-size: 1.1vw;
+                    text-transform: inherit;
+                }
+                .contact-inst {
+                    .icon-instagram {
+                        font-size: 2vw;
                     }
                 }
             }

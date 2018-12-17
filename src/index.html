@@ -122,7 +122,7 @@
         </div>
 
         <div class="main-box menu-circle-box d-none d-md-block">
-            <div class="title float-right">
+            <div class="title">
                 <h5 class="pre-title">Наши</h5>
                 <h3 class="carousel-title">Услуги</h3>
             </div>
@@ -262,7 +262,7 @@
                     </div>
                 </div>
                 <div class="row-slide-project d-flex justify-content-center">
-                    <button class="btn btn-m5-project">еще больше проектов</button>
+                    <button class="btn btn-m5-project mt-5">еще больше проектов</button>
                 </div>
             </div>
         </div>
@@ -409,14 +409,15 @@
             });
 
             function typeIt() {
-                let currentHeight = 10;
+                let currentHeight = 20;
                 let k = setInterval(() => {
-                    $('.nabor-texta').height(currentHeight)
+                    $('.nabor-texta').height(currentHeight);
                     currentHeight+=1;
-                    if(currentHeight === 600) {
+                    console.log(currentHeight)
+                    if(currentHeight > 2000) {
                         clearInterval(k);
                     }
-                }, 10);
+                }, 5);
             }
 
             typeIt();
