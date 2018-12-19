@@ -1021,13 +1021,8 @@ header {
 
             span {
                 &.land-design {
-                    margin-top: 0px;
+                    margin-top: 16%;
                     transform: rotate(180deg)
-                }
-
-                &.visual-design {
-                    margin-left: 10px;
-                    margin-top: -10px;
                 }
             }
         }
@@ -1040,7 +1035,6 @@ header {
 
     @media (max-width: 907.98px) {
         height: 278px;
-        padding-left: 25%;
 
         .menu-circle-item {
             position: relative;
@@ -1049,11 +1043,9 @@ header {
                 line-height: 1em;
                 position: absolute;
                 font-size: 0.9em;
-                bottom: -40px;
                 width: 80px;
 
                 &.one-line-words {
-                    bottom: -35px;
                     letter-spacing: 0;
                 }
             }
@@ -1072,11 +1064,6 @@ header {
                 span {
                     font-size: 3em;
                     margin-top: 0;
-
-                    &.visual-design {
-                        margin-left: 5px;
-                        margin-top: 0px;
-                    }
                 }
             }
         }
@@ -1131,12 +1118,10 @@ header {
                 line-height: 16px;
                 position: absolute;
                 font-size: 12px;
-                bottom: -50px;
                 width: 160px;
                 letter-spacing: 1px;
 
                 &.one-line-words {
-                    bottom: -35px;
                     letter-spacing: 0;
                 }
             }
@@ -1149,11 +1134,8 @@ header {
             height: 160px;
             width: 160px;
 
-            &.text {
-                span {
-                    font-size: 100px;
-                    margin-top: -26px;
-                }
+            &.text span {
+                font-size: 100px;
             }
 
             img {
@@ -1187,10 +1169,6 @@ header {
                 span.rounded-circle-text {
                     font-size: 40px;
                     margin-top: 0;
-
-                    &.visual-design {
-                        margin-left: 4px;
-                    }
                 }
             }
 
@@ -1230,12 +1208,12 @@ header {
                 line-height: 17px;
                 position: absolute;
                 font-size: 14px;
-                bottom: -59px;
+                //bottom: -59px;
                 width: 180px;
                 letter-spacing: 1px;
 
                 &.one-line-words {
-                    bottom: -40px;
+                    //bottom: -40px;
                     letter-spacing: 0;
                 }
             }
@@ -1251,7 +1229,6 @@ header {
             &.text {
                 span {
                     font-size: 110px;
-                    margin-top: -26px;
                 }
             }
 
@@ -1312,12 +1289,12 @@ header {
                 line-height: 20px;
                 position: absolute;
                 font-size: 16px;
-                bottom: -82px;
+                //bottom: -82px;
                 width: 210px;
                 letter-spacing: 1px;
 
                 &.one-line-words {
-                    bottom: -58px;
+                    //bottom: -58px;
                 }
             }
         }
@@ -1331,8 +1308,7 @@ header {
 
             &.text {
                 span {
-                    font-size: 115px;
-                    margin-top: -26px;
+                    font-size: 120px;
                 }
             }
 
@@ -1393,12 +1369,12 @@ header {
                 line-height: 24px;
                 position: absolute;
                 font-size: 19px;
-                bottom: -82px;
+                //bottom: -82px;
                 width: 260px;
                 letter-spacing: 1px;
 
                 &.one-line-words {
-                    bottom: -58px;
+                    //bottom: -58px;
                 }
             }
         }
@@ -1412,8 +1388,7 @@ header {
 
             &.text {
                 span {
-                    font-size: 145px;
-                    margin-top: -26px;
+                    font-size: 140px;
                 }
             }
 
@@ -1472,12 +1447,11 @@ header {
                 line-height: 24px;
                 position: absolute;
                 font-size: 19px;
-                bottom: -82px;
                 width: 260px;
                 letter-spacing: 1px;
 
                 &.one-line-words {
-                    bottom: -58px;
+                    //bottom: -58px;
                 }
             }
         }
@@ -1491,8 +1465,7 @@ header {
 
             &.text {
                 span {
-                    font-size: 165px;
-                    margin-top: -26px;
+                    font-size: 160px;
                 }
             }
 

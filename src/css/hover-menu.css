@@ -1,9 +1,3 @@
-.HOVER {
-  --width: 100%;
-  --time: 0.5s;
-  position: relative;
-  display: inline-block; }
-
 .light {
   --width: 100%;
   --time: 0.5s;
@@ -11,48 +5,56 @@
   display: inline-block;
   overflow: hidden; }
 
+header .menu .nav {
+  position: relative; }
+
 .HOVER a,
 .light .rounded-circle-text {
   position: relative;
   z-index: 5; }
 
-.HOVER span {
+#border {
+  border: 1px solid #353534;
+  left: 0;
+  z-index: 2;
+  position: absolute;
+  display: none;
+  webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+  padding: 8px 30px; }
+
+.border-move-menu-0 {
+  margin-left: 100px; }
+
+.light {
+  position: relative; }
+
+.menu-circle .shadow-light {
   position: absolute;
   display: block;
   content: "";
-  z-index: 0;
-  width: 0;
-  height: 0;
-  top: 0;
-  border: 1px solid rgba(53, 53, 52, 0); }
-
-.HOVER:hover span {
-  border: 1px solid #353534; }
-
-.light .shadow-light {
-  position: absolute;
-  display: block;
-  content: "";
-  z-index: 0;
+  z-index: 1;
   width: 0;
   height: 0;
   top: 0;
   border-radius: 100%;
-  transition: background 2000ms; }
-
-.light:hover .shadow-light {
-  background: rgba(255, 255, 255, 0.1);
+  transition: background 100ms;
   margin-top: 0 !important; }
+
+.light:hover .shadow-light,
+.menu-circle-item:hover .shadow-light {
+  background: rgba(255, 255, 255, 0.1); }
 
 .shadow-light-half-right {
-  transition: background 2000ms;
   background: radial-gradient(circle at 0%, #353534 50%, rgba(255, 255, 255, 0.15) 95%);
-  margin-top: 0 !important; }
+  transition: background 400ms; }
 
 .shadow-light-half-left {
-  transition: background 2000ms;
   background: radial-gradient(circle at 100%, #353534 50%, rgba(255, 255, 255, 0.15) 95%);
-  margin-top: 0 !important; }
+  transition: background 400ms; }
 
 .mobile-menu-items {
   position: absolute;

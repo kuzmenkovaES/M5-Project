@@ -1,20 +1,15 @@
 @import 'variables';
 
-.HOVER {
-  --width: 100%;
-  --time: 0.5s;
-  position: relative;
-  display: inline-block;
-  //color: $main-color-second;
-  //overflow: hidden;
-}
-
 .light {
   --width: 100%;
   --time: 0.5s;
   position: relative;
   display: inline-block;
   overflow: hidden;
+}
+
+header .menu .nav{
+  position: relative;
 }
 
 .HOVER a,
@@ -24,55 +19,57 @@
   //transition: color var(--time);
 }
 
-.HOVER span {
+#border {
+  border: 1px solid rgba($main-color-second, 1);
+  left: 0;
+  z-index: 2;
+  position:absolute;
+  display: none;
+  webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+  padding: 8px 30px;
+  //transition: width 200ms;
+}
+
+.border-move-menu-0 {
+  margin-left: 100px;
+}
+
+.light {
+  position: relative;
+}
+
+.menu-circle .shadow-light {
   position: absolute;
   display: block;
   content: "";
 
-  z-index: 0;
-  width: 0;
-  height: 0;
-  top: 0;
-
-  border: 1px solid rgba($main-color-second, 0);
-  //transform: translate(-50%, -50%);
-  //transition: var(--time);
-}
-
-.HOVER:hover span {
-    //width: calc(var(--width));
-    border: 1px solid rgba($main-color-second, 1);
-}
-
-.light .shadow-light {
-  position: absolute;
-  display: block;
-  content: "";
-
-  z-index: 0;
+  z-index: 1;
   width: 0;
   height: 0;
   top: 0;
 
   border-radius: 100%;
-  transition: background 2000ms;
+  transition: background 100ms;
+  margin-top: 0!important;
 }
 
-.light:hover .shadow-light {
+.light:hover .shadow-light,
+.menu-circle-item:hover .shadow-light {
   background: rgba(#fff, 0.1);
-  margin-top: 0!important;
 }
 
 .shadow-light-half-right {
-  transition: background 2000ms;
   background: radial-gradient(circle at 0%, #353534 50%, rgba(255,255,255, 0.15) 95%);
-  margin-top: 0!important;
+  transition: background 400ms;
 }
 
 .shadow-light-half-left {
-  transition: background 2000ms;
   background: radial-gradient(circle at 100%, #353534 50%, rgba(255,255,255, 0.15) 95%);
-  margin-top: 0!important;
+  transition: background 400ms;
 }
 
 // Variable Setup

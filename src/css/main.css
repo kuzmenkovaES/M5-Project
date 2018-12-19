@@ -1,11 +1,5 @@
 @charset "UTF-8";
 /*@import 'extra-small-mobile-direct-message';*/
-.HOVER {
-  --width: 100%;
-  --time: 0.5s;
-  position: relative;
-  display: inline-block; }
-
 .light {
   --width: 100%;
   --time: 0.5s;
@@ -13,48 +7,56 @@
   display: inline-block;
   overflow: hidden; }
 
+header .menu .nav {
+  position: relative; }
+
 .HOVER a,
 .light .rounded-circle-text {
   position: relative;
   z-index: 5; }
 
-.HOVER span {
+#border {
+  border: 1px solid #353534;
+  left: 0;
+  z-index: 2;
+  position: absolute;
+  display: none;
+  webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+  padding: 8px 30px; }
+
+.border-move-menu-0 {
+  margin-left: 100px; }
+
+.light {
+  position: relative; }
+
+.menu-circle .shadow-light {
   position: absolute;
   display: block;
   content: "";
-  z-index: 0;
-  width: 0;
-  height: 0;
-  top: 0;
-  border: 1px solid rgba(53, 53, 52, 0); }
-
-.HOVER:hover span {
-  border: 1px solid #353534; }
-
-.light .shadow-light {
-  position: absolute;
-  display: block;
-  content: "";
-  z-index: 0;
+  z-index: 1;
   width: 0;
   height: 0;
   top: 0;
   border-radius: 100%;
-  transition: background 2000ms; }
-
-.light:hover .shadow-light {
-  background: rgba(255, 255, 255, 0.1);
+  transition: background 100ms;
   margin-top: 0 !important; }
+
+.light:hover .shadow-light,
+.menu-circle-item:hover .shadow-light {
+  background: rgba(255, 255, 255, 0.1); }
 
 .shadow-light-half-right {
-  transition: background 2000ms;
   background: radial-gradient(circle at 0%, #353534 50%, rgba(255, 255, 255, 0.15) 95%);
-  margin-top: 0 !important; }
+  transition: background 400ms; }
 
 .shadow-light-half-left {
-  transition: background 2000ms;
   background: radial-gradient(circle at 100%, #353534 50%, rgba(255, 255, 255, 0.15) 95%);
-  margin-top: 0 !important; }
+  transition: background 400ms; }
 
 .mobile-menu-items {
   position: absolute;
@@ -847,28 +849,22 @@ header {
     .menu-circle .rounded-circle-item.text {
       border: 1px solid #fff; }
       .menu-circle .rounded-circle-item.text span.land-design {
-        margin-top: 0px;
+        margin-top: 16%;
         transform: rotate(180deg); }
-      .menu-circle .rounded-circle-item.text span.visual-design {
-        margin-left: 10px;
-        margin-top: -10px; }
   .menu-circle .menu-circle-text {
     text-transform: uppercase;
     text-align: center; }
   @media (max-width: 907.98px) {
     .menu-circle {
-      height: 278px;
-      padding-left: 25%; }
+      height: 278px; }
       .menu-circle .menu-circle-item {
         position: relative; }
         .menu-circle .menu-circle-item .menu-circle-text {
           line-height: 1em;
           position: absolute;
           font-size: 0.9em;
-          bottom: -40px;
           width: 80px; }
           .menu-circle .menu-circle-item .menu-circle-text.one-line-words {
-            bottom: -35px;
             letter-spacing: 0; }
       .menu-circle .rounded-circle-item {
         margin-right: 26px;
@@ -881,9 +877,6 @@ header {
           .menu-circle .rounded-circle-item.text span {
             font-size: 3em;
             margin-top: 0; }
-            .menu-circle .rounded-circle-item.text span.visual-design {
-              margin-left: 5px;
-              margin-top: 0px; }
       .menu-circle .menu-circle-item-small {
         margin-top: -57px;
         position: relative;
@@ -917,11 +910,9 @@ header {
           line-height: 16px;
           position: absolute;
           font-size: 12px;
-          bottom: -50px;
           width: 160px;
           letter-spacing: 1px; }
           .menu-circle .menu-circle-item .menu-circle-text.one-line-words {
-            bottom: -35px;
             letter-spacing: 0; }
       .menu-circle .rounded-circle-item {
         margin-right: 26px;
@@ -929,8 +920,7 @@ header {
         height: 160px;
         width: 160px; }
         .menu-circle .rounded-circle-item.text span {
-          font-size: 100px;
-          margin-top: -26px; }
+          font-size: 100px; }
         .menu-circle .rounded-circle-item img {
           width: 100%; }
       .menu-circle .menu-circle-item-small {
@@ -951,8 +941,6 @@ header {
           .menu-circle .menu-circle-item-small .rounded-circle-item span.rounded-circle-text {
             font-size: 40px;
             margin-top: 0; }
-            .menu-circle .menu-circle-item-small .rounded-circle-item span.rounded-circle-text.visual-design {
-              margin-left: 4px; }
         .menu-circle .menu-circle-item-small .menu-circle-text {
           position: absolute;
           font-weight: 500;
@@ -974,11 +962,9 @@ header {
           line-height: 17px;
           position: absolute;
           font-size: 14px;
-          bottom: -59px;
           width: 180px;
           letter-spacing: 1px; }
           .menu-circle .menu-circle-item .menu-circle-text.one-line-words {
-            bottom: -40px;
             letter-spacing: 0; }
       .menu-circle .rounded-circle-item {
         margin-right: 26px;
@@ -986,8 +972,7 @@ header {
         height: 180px;
         width: 180px; }
         .menu-circle .rounded-circle-item.text span {
-          font-size: 110px;
-          margin-top: -26px; }
+          font-size: 110px; }
         .menu-circle .rounded-circle-item img {
           width: 100%; }
       .menu-circle .menu-circle-item-small {
@@ -1025,19 +1010,15 @@ header {
           line-height: 20px;
           position: absolute;
           font-size: 16px;
-          bottom: -82px;
           width: 210px;
           letter-spacing: 1px; }
-          .menu-circle .menu-circle-item .menu-circle-text.one-line-words {
-            bottom: -58px; }
       .menu-circle .rounded-circle-item {
         margin-right: 41px;
         margin-top: -23px;
         height: 210px;
         width: 210px; }
         .menu-circle .rounded-circle-item.text span {
-          font-size: 115px;
-          margin-top: -26px; }
+          font-size: 120px; }
         .menu-circle .rounded-circle-item img {
           width: 100%; }
       .menu-circle .menu-circle-item-small {
@@ -1075,19 +1056,15 @@ header {
           line-height: 24px;
           position: absolute;
           font-size: 19px;
-          bottom: -82px;
           width: 260px;
           letter-spacing: 1px; }
-          .menu-circle .menu-circle-item .menu-circle-text.one-line-words {
-            bottom: -58px; }
       .menu-circle .rounded-circle-item {
         margin-right: 41px;
         margin-top: -23px;
         height: 240px;
         width: 240px; }
         .menu-circle .rounded-circle-item.text span {
-          font-size: 145px;
-          margin-top: -26px; }
+          font-size: 140px; }
         .menu-circle .rounded-circle-item img {
           width: 100%; }
       .menu-circle .menu-circle-item-small {
@@ -1123,19 +1100,15 @@ header {
           line-height: 24px;
           position: absolute;
           font-size: 19px;
-          bottom: -82px;
           width: 260px;
           letter-spacing: 1px; }
-          .menu-circle .menu-circle-item .menu-circle-text.one-line-words {
-            bottom: -58px; }
       .menu-circle .rounded-circle-item {
         margin-right: 41px;
         margin-top: -23px;
         height: 260px;
         width: 260px; }
         .menu-circle .rounded-circle-item.text span {
-          font-size: 165px;
-          margin-top: -26px; }
+          font-size: 160px; }
         .menu-circle .rounded-circle-item img {
           width: 100%; }
       .menu-circle .menu-circle-item-small {

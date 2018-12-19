@@ -1,36 +1,26 @@
 (function reload() {
     const ELEMENTS = document.querySelectorAll(".HOVER");
-    const ELEMENTS_SPAN = [];
-    let heightNavLink;
-    let widthNavLink;
+    const ELEMENTS_SPAN = document.querySelector('#border');
+    // let heightNavLink;
+    // let widthNavLink;
 
     ELEMENTS.forEach((element, index) => {
-        heightNavLink = element.querySelector("a").clientHeight;
-        widthNavLink = element.querySelector("a").clientWidth;
-
-        // If The span element for this element does not exist in the array, add it.
-        if (!ELEMENTS_SPAN[index]){
-            ELEMENTS_SPAN[index] = element.querySelector("span");
-            ELEMENTS_SPAN[index].style.height = `${heightNavLink}px`;
-            ELEMENTS_SPAN[index].style.width = `${widthNavLink}px`;
-        }
+        let heightNavLink = element.querySelector("a").clientHeight;
+        let widthNavLink = element.querySelector("a").clientWidth;
 
         element.addEventListener("mousemove", event => {
-            // console.log(event)
-            let left = event.offsetX - widthNavLink/2;
-            ELEMENTS_SPAN[index].style.left = `${left}px`;
-        });
+            let left = 0;
+            for(let i=index; i>0; i--){
+                left += ELEMENTS[i-1].offsetWidth;
+            }
 
-        // element.addEventListener("mouseover", event => {
-        //     console.log(event)
-        //     console.log(element)
-        //     const left =  (event.pageX - element.offsetLeft);
-        //     ELEMENTS_SPAN[index].style.left = `${event.clientX}px`;
-        // });
-        //
-        // element.addEventListener("mouseout", event => {
-        //     ELEMENTS_SPAN[index].style.left = event.pageX - element.offsetLeft + "px";
-        // });
+            console.log(left)
+
+            ELEMENTS_SPAN.style.marginLeft = `${left}px`;
+            ELEMENTS_SPAN.style.height = `${heightNavLink}px`;
+            ELEMENTS_SPAN.style.width = `${widthNavLink}px`;
+            ELEMENTS_SPAN.style.display = 'inline';
+        });
     });
 
     const windowHeight = $(window).height();
