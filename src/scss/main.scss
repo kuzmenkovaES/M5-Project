@@ -3925,3 +3925,23 @@ header {
     height: 0;
     overflow: hidden;
 }
+
+.portfolio-page {
+  height: 100vh;
+
+  a {
+    color: $main-color-first;
+
+    &:hover {
+      color: $main-color-first;
+      text-decoration: none;
+    }
+  }
+  .carousel-title {
+      top: 100px;
+      font-size: 5em;
+  }
+  .menu-circle {
+    height: 85vh;
+  }
+}

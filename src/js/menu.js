@@ -1,8 +1,6 @@
 (function reload() {
     const ELEMENTS = document.querySelectorAll(".HOVER");
     const ELEMENTS_SPAN = document.querySelector('#border');
-    // let heightNavLink;
-    // let widthNavLink;
 
     ELEMENTS.forEach((element, index) => {
         let heightNavLink = element.querySelector("a").clientHeight;
@@ -14,12 +12,16 @@
                 left += ELEMENTS[i-1].offsetWidth;
             }
 
-            console.log(left)
-
+            ELEMENTS_SPAN.classList.add('on');
             ELEMENTS_SPAN.style.marginLeft = `${left}px`;
             ELEMENTS_SPAN.style.height = `${heightNavLink}px`;
             ELEMENTS_SPAN.style.width = `${widthNavLink}px`;
             ELEMENTS_SPAN.style.display = 'inline';
+        });
+
+        element.addEventListener("mouseout", event => {
+            ELEMENTS_SPAN.classList.remove('on');
+            ELEMENTS_SPAN.style.marginLeft = `${0}px`;
         });
     });
 

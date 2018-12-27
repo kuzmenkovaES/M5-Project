@@ -14,7 +14,7 @@ header .menu .nav {
   z-index: 5; }
 
 #border {
-  border: 1px solid #353534;
+  border: 1px solid rgba(53, 53, 52, 0);
   left: 0;
   z-index: 2;
   position: absolute;
@@ -25,6 +25,9 @@ header .menu .nav {
   -o-transition: all 400ms ease;
   transition: all 400ms ease;
   padding: 8px 30px; }
+
+#border.on {
+  border: 1px solid #353534; }
 
 .border-move-menu-0 {
   margin-left: 100px; }
