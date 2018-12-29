@@ -3,10 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="721e0b56-549e-450e-b5ce-434f9d58138c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
+    </list>
+    <list id="16701dc3-2882-432b-b01a-4353d7f2aaa6" name="Revert: gallery" comment="">
+      <change afterPath="$PROJECT_DIR$/src/images/3d_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/architecture_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/avtorskiy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/avtorskiy_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bar_restoran.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/doma.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/kvartiry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/landscape_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/magazini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/obsch_pom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ofisy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/planirovka_project.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/realizacija.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -59,7 +71,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="5957" />
-          <entry key="js" value="1826" />
+          <entry key="js" value="1829" />
           <entry key="md" value="10" />
           <entry key="scss" value="9343" />
         </counts>
@@ -68,7 +80,7 @@
         <counts>
           <entry key="CSS" value="1" />
           <entry key="HTML" value="5957" />
-          <entry key="JavaScript" value="1825" />
+          <entry key="JavaScript" value="1828" />
           <entry key="PLAIN_TEXT" value="10" />
           <entry key="SCSS" value="9343" />
         </counts>
@@ -108,10 +120,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
+            <state relative-caret-position="519">
               <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
               <folding>
                 <element signature="e#104#357#0" />
@@ -168,16 +180,16 @@
         <entry file="file://$PROJECT_DIR$/src/js/light.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="163">
-              <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="21" selection-end-column="15" />
+              <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/menu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+            <state relative-caret-position="176">
+              <caret line="56" column="61" selection-start-line="56" selection-start-column="61" selection-end-line="56" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -221,9 +233,9 @@
       <find>border</find>
       <find>main-box bid</find>
       <find>menu</find>
-      <find>full-logo</find>
       <find>logo-box</find>
       <find>logo</find>
+      <find>full-logo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -246,8 +258,8 @@
         <option value="$PROJECT_DIR$/src/scss/hover-menu.scss" />
         <option value="$PROJECT_DIR$/src/portfolio.html" />
         <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/js/menu.js" />
         <option value="$PROJECT_DIR$/src/scss/main.scss" />
+        <option value="$PROJECT_DIR$/src/js/menu.js" />
       </list>
     </option>
   </component>
@@ -273,7 +285,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="272" />
+    <option name="x" value="118" />
     <option name="y" value="23" />
     <option name="width" value="1173" />
     <option name="height" value="821" />
@@ -283,7 +295,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,7 +311,7 @@
               <item name="M5-Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="M5-Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="M5-Project" type="b2602c69:ProjectViewProjectNode" />
@@ -312,6 +323,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,6 +363,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="721e0b56-549e-450e-b5ce-434f9d58138c" name="Default Changelist" comment="" />
+      <changelist id="16701dc3-2882-432b-b01a-4353d7f2aaa6" name="Revert: gallery" comment="" />
       <created>1541078521515</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -390,15 +403,15 @@
       <workItem from="1545648645387" duration="11000" />
       <workItem from="1545856971585" duration="2001000" />
       <workItem from="1545913164795" duration="40000" />
-      <workItem from="1546071584736" duration="9260000" />
+      <workItem from="1546071584736" duration="9795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256535000" />
+    <option name="totallyTimeSpent" value="257070000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="272" y="23" width="1173" height="821" extended-state="0" />
+    <frame x="118" y="23" width="1173" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7615527" visible="true" weight="0.2638889" />
@@ -412,11 +425,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3753541" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.4036827" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.22237961" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.47450426" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -672,23 +685,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/light.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="21" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
+        <state relative-caret-position="519">
           <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
           <folding>
             <element signature="e#104#357#0" />
@@ -702,6 +701,20 @@
             <element signature="e#1204#1236#0" />
             <element signature="e#3805#5236#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/light.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="56" column="61" selection-start-line="56" selection-start-column="61" selection-end-line="56" selection-end-column="61" />
         </state>
       </provider>
     </entry>

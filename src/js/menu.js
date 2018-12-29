@@ -54,7 +54,7 @@
         $('.full-logo')[0].style.setProperty('min-width', `${minWidthLogo}px`);
 
         if(documentScrollTop) {
-            const top = Math.trunc(documentScrollTop/10) < 5 ? 0 : documentScrollTop;
+            const top = Math.trunc(documentScrollTop/10) < 10 ? 0 : documentScrollTop;
             $('.navbar-brand.logo')[0].style.setProperty('width', `${widthLogo - (top/15)}px`);
         }
     }
