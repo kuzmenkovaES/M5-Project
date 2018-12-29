@@ -238,7 +238,7 @@ header {
   top: 0;
   z-index: 100;
   background: rgba(255, 255, 255, 0.9);
-  transition: padding 1000ms; }
+  transition: padding 0ms; }
   @media (max-width: 768px) {
     header.full-scree {
       display: none !important; } }
@@ -262,48 +262,28 @@ header {
               padding: 8px 1px;
               text-align: center;
               font-size: 16px; }
-  header.shrink {
-    padding: 2px 7px; }
-    @media (min-width: 2220px) {
-      header.shrink {
-        padding: 10px 2vw; } }
-    header.shrink .navbar-toggler-icon {
-      font-size: 20px; }
-    header.shrink .mobile-menu-items {
-      top: -20px; }
-    header.shrink .menu {
-      margin-top: 0; }
+  @media (min-width: 2220px) {
+    header.shrink {
+      padding: 10px 2vw; } }
+  header.shrink .navbar-toggler-icon {
+    font-size: 20px; }
+  header.shrink .mobile-menu-items {
+    top: -20px; }
+  header.shrink .menu {
+    margin-top: 0; }
 
 .navbar-brand {
   padding: 0;
-  width: 100%;
   height: 100%;
-  min-width: 140px; }
+  min-width: 76px;
+  overflow-x: hidden; }
   .navbar-brand .full-logo {
-    width: 100%;
     transition: display 1000ms; }
   .navbar-brand .mini-logo {
     width: 45px;
     transition: display 1000ms; }
     @media (min-width: 2220px) {
       .navbar-brand .mini-logo {
-        width: 100%; } }
-  @media (max-width: 1259.98px) {
-    .navbar-brand {
-      width: 10%; } }
-  @media (min-width: 1260px) and (max-width: 1559.98px) {
-    .navbar-brand {
-      width: 10%; } }
-  @media (min-width: 1560px) and (max-width: 2219.98px) {
-    .navbar-brand {
-      width: 258px;
-      max-height: 90px; }
-      .navbar-brand .full-logo {
-        width: 258px; } }
-  @media (min-width: 2220px) {
-    .navbar-brand {
-      width: 258px; }
-      .navbar-brand .full-logo {
         width: 100%; } }
 
 .social-media .nav-item {
@@ -346,9 +326,6 @@ header {
 .menu {
   display: inline-block;
   margin-top: -14px; }
-  @media (max-width: 1660px) {
-    .menu {
-      margin-left: -12%; } }
   .menu .nav-item {
     text-transform: uppercase;
     position: relative;
@@ -380,9 +357,6 @@ header {
     .menu .nav-item:hover {
       font-family: 'Segoe UI';
       font-weight: bolder; }
-      @media (min-width: 1920px) {
-        .menu .nav-item:hover .nav-link {
-          padding: 13px 19px; } }
       .menu .nav-item:hover.active .nav-link {
         border: 1px solid #353534;
         font-weight: bolder; }

@@ -3,9 +3,6 @@
     const ELEMENTS_SPAN = document.querySelector('#border');
 
     ELEMENTS.forEach((element, index) => {
-        let heightNavLink = element.querySelector("a").clientHeight;
-        let widthNavLink = element.querySelector("a").clientWidth;
-
         element.addEventListener("mousemove", event => {
             let left = 0;
             for(let i=index; i>0; i--){
@@ -14,8 +11,8 @@
 
             ELEMENTS_SPAN.classList.add('on');
             ELEMENTS_SPAN.style.marginLeft = `${left}px`;
-            ELEMENTS_SPAN.style.height = `${heightNavLink}px`;
-            ELEMENTS_SPAN.style.width = `${widthNavLink}px`;
+            ELEMENTS_SPAN.style.height = `${element.clientHeight}px`;
+            ELEMENTS_SPAN.style.width = `${element.clientWidth}px`;
             ELEMENTS_SPAN.style.display = 'inline';
         });
 
@@ -42,22 +39,48 @@
         });
     }
 
+    resizeLogo();
+    window.addEventListener('resize', () => resizeLogo());
+
+    function resizeLogo(documentScrollTop) {
+        const widthLogo = window.innerWidth < 1921 ? ((258*window.innerWidth)/1920) : 258;
+        const minWidthLogo = window.innerWidth < 1921 ? ((106*window.innerWidth)/1920) : 106;
+
+        $('.logo-box')[0].style.setProperty('width', `${widthLogo}px`);
+        $('.navbar-brand.logo')[0].style.setProperty('width', `${widthLogo}px`);
+        $('.full-logo')[0].style.setProperty('width', `${widthLogo}px`);
+
+        $('.navbar-brand.logo')[0].style.setProperty('min-width', `${minWidthLogo}px`);
+        $('.full-logo')[0].style.setProperty('min-width', `${minWidthLogo}px`);
+
+        if(documentScrollTop) {
+            const top = Math.trunc(documentScrollTop/10) < 5 ? 0 : documentScrollTop;
+            $('.navbar-brand.logo')[0].style.setProperty('width', `${widthLogo - (top/15)}px`);
+        }
+    }
+
     $(document).on('scroll', () => {
         swipeElements('.pre-title', 'swipe-left-text-first' );
         swipeElements('.carousel-title', 'swipe-left-text-second' );
 
-        if ($(document).scrollTop() > 50) {
+        if ($(document).scrollTop() > 10) {
             $('header').addClass('shrink');
+
+            $('header')[0].style.setProperty('padding-top', `${14-$(document).scrollTop()/100}px`);
+            $('header')[0].style.setProperty('padding-bottom', `${14-$(document).scrollTop()/100}px`);
+
+            resizeLogo($(document).scrollTop());
+
             $('.mini-logo').removeClass('d-none');
             $('.full-logo').removeClass('d-block');
-            $('.mini-logo').addClass('d-block');
-            $('.full-logo').addClass('d-none');
+            // $('.mini-logo').addClass('d-block');
+            // $('.full-logo').addClass('d-none');
         } else {
             $('header').removeClass('shrink');
-            $('.mini-logo').addClass('d-none');
-            $('.full-logo').addClass('d-block');
-            $('.mini-logo').removeClass('d-block');
-            $('.full-logo').removeClass('d-none');
+            // $('.mini-logo').addClass('d-none');
+            // $('.full-logo').addClass('d-block');
+            // $('.mini-logo').removeClass('d-block');
+            // $('.full-logo').removeClass('d-none');
         }
     });
 

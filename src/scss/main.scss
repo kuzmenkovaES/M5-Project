@@ -78,7 +78,7 @@ header {
     top: 0;
     z-index: 100;
     background: rgba($main-color-first, 0.9);
-    transition: padding 1000ms;
+    transition: padding 0ms;
 
     &.full-scree {
         @media (max-width: 768px) {
@@ -117,7 +117,7 @@ header {
     }
 
     &.shrink {
-        padding: 2px 7px;
+        //padding: 2px 7px;
 
         @media (min-width: 2220px) {
           padding: 10px 2vw;
@@ -139,12 +139,11 @@ header {
 
 .navbar-brand {
     padding: 0;
-    width: 100%;
     height: 100%;
-    min-width: 140px;
+    min-width: 76px;
+    overflow-x: hidden;
 
     .full-logo {
-        width: 100%;
         transition: display 1000ms;
     }
 
@@ -155,26 +154,6 @@ header {
       @media (min-width: 2220px) {
         width: 100%;
       }
-    }
-
-    @media (max-width: 1259.98px) {
-        width: 10%;
-    }
-    @media (min-width: 1260px) and (max-width: 1559.98px) {
-        width: 10%;
-    }
-    @media (min-width: 1560px) and (max-width: 2219.98px) {
-        width: 258px;
-        max-height: 90px;
-        .full-logo {
-            width: 258px;
-        }
-    }
-    @media (min-width: 2220px) {
-        width: 258px;
-        .full-logo {
-          width: 100%;
-        }
     }
 }
 
@@ -255,7 +234,7 @@ header {
     margin-top: -14px;
 
     @media (max-width: 1660px) {
-        margin-left: -12%;
+        //margin-left: -12%;
     }
 
     .nav-item {
@@ -305,12 +284,6 @@ header {
             font-family: 'Segoe UI';
             font-weight: bolder;
 
-            @media (min-width: 1920px) {
-
-                .nav-link {
-                    padding: 13px 19px;
-                }
-            }
             &.active {
                 .nav-link {
                     border: 1px solid $main-color-second;
