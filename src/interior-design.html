@@ -11,59 +11,74 @@
     <title>M5 Design Studio</title>
 </head>
 <body>
-    <header class="d-flex justify-content-between align-items-center">
-    <!--<div class="d-flex justify-content-between">-->
-    <a class="navbar-brand" href="index.html">
-        <img src="images/Logo_big.png"  alt="M5 Design Studio">
-    </a>
-    <div class="menu align-self-baseline">
-        <ul class="nav justify-content-center">
-            <li class="nav-item HOVER">
-                <span></span>
-                <a class="nav-link" href="interior-design.html">Dизайн интерьера</a>
-            </li>
-            <li class="nav-item HOVER">
-                <span></span>
-                <a class="nav-link" href="#">Архитектура</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Архитектурное проектирование</a>
-                    <a class="dropdown-item" href="#">Дизайн фасадов</a>
-                    <a class="dropdown-item" href="#">Архитектурные концепции</a>
-                </div>
-            </li>
-            <li class="nav-item HOVER">
-                <span></span>
-                <a class="nav-link" href="#">3D визуализация</a>
-            </li>
-            <li class="nav-item HOVER">
-                <span></span>
-                <a class="nav-link disabled" href="#">Ландшафт</a>
-            </li>
-            <li class="nav-item portfolio-btn HOVER">
-                <span></span>
-                <a class="nav-link" href="portfolio.html">Портфолио</a>
-            </li>
-            <li class="nav-item HOVER">
-                <span></span>
-                <a class="nav-link disabled" href="#">О нас</a>
-            </li>
-            <li class="nav-item HOVER">
-                <span></span>
-                <a class="nav-link disabled" href="#">Контакты</a>
-            </li>
-        </ul>
-    </div>
-    <!--</div>-->
+    <header class="full-scree d-flex justify-content-between align-items-center">
+        <div class="logo-box">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="images/logo_big.png" class="full-logo d-block" alt="M5 Design Studio">
+                <img src="images/logo_min.png" class="mini-logo d-none"  alt="M5 Design Studio">
+            </a>
+        </div>
 
-    <div class="social-media">
-        <a class="nav-item" href="#">
-            <i class="icon icon-instagram"></i>
-        </a>
-        <a class="nav-item" href="#">
-            <i class="icon icon-behance2"></i>
-        </a>
-    </div>
-</header>
+        <div class="menu align-self-baseline">
+            <ul class="nav justify-content-center">
+                <span id="border"></span>
+                <li class="nav-item HOVER">
+                    <a class="nav-link" href="interior-design.html">Dизайн интерьера</a>
+                </li>
+                <li class="nav-item HOVER">
+                    <a class="nav-link" href="#">Архитектура</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Архитектурное проектирование</a>
+                        <a class="dropdown-item" href="#">Дизайн фасадов</a>
+                        <a class="dropdown-item" href="#">Архитектурные концепции</a>
+                    </div>
+                </li>
+                <li class="nav-item HOVER">
+                    <a class="nav-link" href="#">3D визуализация</a>
+                </li>
+                <li class="nav-item HOVER">
+                    <a class="nav-link disabled" href="#">Ландшафт</a>
+                </li>
+                <li class="nav-item portfolio-btn HOVER">
+                    <a class="nav-link" href="portfolio.html">Портфолио</a>
+                </li>
+                <li class="nav-item HOVER">
+                    <a class="nav-link disabled" href="#">О нас</a>
+                </li>
+                <li class="nav-item HOVER">
+                    <a class="nav-link disabled" href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <a class="nav-item" href="#">
+                <i class="icon icon-instagram"></i>
+            </a>
+            <a class="nav-item" href="#">
+                <i class="icon icon-behance2"></i>
+            </a>
+        </div>
+    </header>
+    <header class="sm-devices d-block d-sm-block d-md-none">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo_big.png" class="full-logo d-block"  alt="M5 Design Studio">
+                <img src="images/logo_min.png" class="mini-logo d-none"  alt="M5 Design Studio">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="mobile-menu-items">
+                <a class="nav-link" href="interior-design.html">Dизайн интерьера</a>
+                <a class="nav-link" href="#">Архитектура</a>
+                <a class="nav-link" href="#">3D визуализация</a>
+                <a class="nav-link disabled" href="#">Ландшафт</a>
+                <a class="nav-link important-item" href="portfolio.html">Портфолио</a>
+                <a class="nav-link disabled" href="#">О нас</a>
+                <a class="nav-link disabled" href="#">Контакты</a>
+            </div>
+        </nav>
+    </header>
 
     <div class="main-box philosophy">
         <img class="d-block w-100" src="images/stairs-min.jpg" alt="Interior design">
@@ -249,15 +264,30 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="js/jquery.viewportchecker.js"  crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"  crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"  crossorigin="anonymous"></script>
     <script src="js/menu.js" crossorigin="anonymous"></script>
     <script>
-    (function reload() {
-        // $('.carousel').carousel({
-        //     interval: 20000
-        // })
-    })();
+        (function reload() {
+            $('.carousel').carousel({
+                interval: 5000
+            });
+
+            function typeIt() {
+                let currentHeight = -300;
+                let k = setInterval(() => {
+                    $('.nabor-texta').height(currentHeight);
+                    currentHeight+=1;
+                    if(currentHeight > 800) {
+                        clearInterval(k);
+                    }
+                }, 5);
+            }
+
+            typeIt();
+        })();
+
+    </script>
 
 </script>
 </body>
