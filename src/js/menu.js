@@ -46,7 +46,6 @@
         const widthLogo = window.innerWidth < 1921 ? ((258*window.innerWidth)/1920) : 258;
         const minWidthLogo = window.innerWidth < 1921 ? ((106*window.innerWidth)/1920) : 106;
 
-        // $('.logo-box')[0].style.setProperty('width', `${widthLogo}px`);
         $('.navbar-brand.logo')[0].style.setProperty('width', `${widthLogo}px`);
         $('.full-logo')[0].style.setProperty('width', `${widthLogo}px`);
 
@@ -60,28 +59,32 @@
         }
     }
 
+    function changeMenuPadding() {
+        $('header')[0].style.setProperty('padding-top', `${9-$(document).scrollTop()/40}px`);
+        $('header')[0].style.setProperty('padding-bottom', `${9-$(document).scrollTop()/40}px`);
+        $('.menu')[0].style.setProperty('margin-top', `${(-(9-$(document).scrollTop()/40)) < 0 ? (-(9-$(document).scrollTop()/40)) : 0}px`);
+    }
+
     $(document).on('scroll', () => {
         swipeElements('.pre-title', 'swipe-left-text-first' );
         swipeElements('.carousel-title', 'swipe-left-text-second' );
+        resizeLogo($(document).scrollTop());
 
         if ($(document).scrollTop() > 40) {
 
             $('.full-logo').addClass('d-none');
+            $('.full-logo').removeClass('d-block');
             $('.full-logo').removeClass('hide');
 
-            resizeLogo($(document).scrollTop());
-            $('header')[0].style.setProperty('padding-top', `${9-$(document).scrollTop()/40}px`);
-            $('header')[0].style.setProperty('padding-bottom', `${9-$(document).scrollTop()/40}px`);
-            $('.menu')[0].style.setProperty('margin-top', `${(-(9-$(document).scrollTop()/40))>0 || 0}px`);
+            $('.medium-logo').removeClass('d-none');
+            $('.medium-logo').addClass('d-block');
+
+            changeMenuPadding();
 
         } else if ($(document).scrollTop() > 10) {
             $('header').addClass('shrink');
 
-            $('header')[0].style.setProperty('padding-top', `${9-$(document).scrollTop()/40}px`);
-            $('header')[0].style.setProperty('padding-bottom', `${9-$(document).scrollTop()/40}px`);
-            $('.menu')[0].style.setProperty('margin-top', `${-(9-$(document).scrollTop()/40)}px`);
-
-            resizeLogo($(document).scrollTop());
+            changeMenuPadding();
 
             $('.medium-logo').removeClass('d-none');
             $('.medium-logo').addClass('d-block');
@@ -90,19 +93,21 @@
             $('.full-logo').removeClass('d-block');
             $('.full-logo').removeClass('d-none');
 
-            // $('.mini-logo').removeClass('d-block');
-            // $('.mini-logo').addClass('d-none');
         } else {
             $('header').removeClass('shrink');
-            // $('.mini-logo').addClass('d-none');
-            // $('.mini-logo').removeClass('d-block');
+
+            changeMenuPadding();
 
             $('.full-logo').addClass('d-block');
+            $('.full-logo').removeClass('d-none');
             $('.full-logo').removeClass('hide');
 
-            $('.medium-logo').removeClass('d-block');
-            $('.medium-logo').addClass('d-none');
+            setTimeout(() => {
+                $('.medium-logo').addClass('d-none');
+                $('.medium-logo').removeClass('d-block');
+            }, 500)
         }
+
     });
 
 })();

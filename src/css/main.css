@@ -271,22 +271,31 @@ header {
 
 .navbar-brand {
   padding: 0;
-  min-height: 40px;
   min-width: 50px;
   position: relative; }
   .navbar-brand .full-logo {
     opacity: 1;
     transition: opacity 500ms;
-    width: 100%; }
+    width: 100%;
+    z-index: 2; }
     .navbar-brand .full-logo.d-block {
       opacity: 1; }
-  .navbar-brand .full-logo.hide {
-    opacity: 0;
-    transition: opacity 1000ms; }
-    .navbar-brand .full-logo.hide + .medium-logo {
-      position: absolute;
-      top: 0;
-      left: 0; }
+      .navbar-brand .full-logo.d-block + .medium-logo.d-block {
+        position: absolute;
+        top: 0;
+        left: 0; }
+    .navbar-brand .full-logo.hide {
+      opacity: 0; }
+      .navbar-brand .full-logo.hide + .medium-logo {
+        position: absolute;
+        top: 0;
+        left: 0; }
+        .navbar-brand .full-logo.hide + .medium-logo.d-none {
+          display: block !important; }
+    .navbar-brand .full-logo.d-none {
+      opacity: 0; }
+      .navbar-brand .full-logo.d-none + .medium-logo.d-none {
+        display: block !important; }
   .navbar-brand .medium-logo {
     width: 100%;
     transition: width 100ms; }
@@ -1341,6 +1350,8 @@ header {
     text-transform: inherit; }
   .contact-box .btn-group-contact .contact-inst {
     color: #fff; }
+    .contact-box .btn-group-contact .contact-inst:hover {
+      text-decoration: none; }
   @media (max-width: 1097.98px) {
     .contact-box .contact {
       padding: 19px 26px; }
