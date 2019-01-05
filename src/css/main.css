@@ -192,9 +192,6 @@ header .menu .nav {
 .icon-pinterest2:before {
   content: "\ead2"; }
 
-@viewport {
-  width: device-width; }
-
 * {
   font-family: 'Segoe UI Light'; }
   @media (max-width: 899.98px) {
@@ -231,7 +228,7 @@ body {
       overflow-x: hidden; } }
 
 header {
-  padding: 14px 20px 14px 14px;
+  padding: 9px 20px 9px 9px;
   position: fixed;
   width: 100%;
   box-shadow: 1px 5px 38px rgba(0, 0, 0, 0.5);
@@ -244,7 +241,7 @@ header {
       display: none !important; } }
   @media (min-width: 1920px) and (max-width: 2219.98px) {
     header {
-      padding: 14px 40px 14px 14px; } }
+      padding: 9px 40px 9px 9px; } }
   @media (min-width: 2220px) {
     header {
       padding: 1vw 2vw 1vw; } }
@@ -269,19 +266,33 @@ header {
     font-size: 20px; }
   header.shrink .mobile-menu-items {
     top: -20px; }
-  header.shrink .menu {
-    margin-top: 0; }
+  header .logo-box {
+    display: contents; }
 
 .navbar-brand {
   padding: 0;
-  height: 100%;
-  min-width: 76px;
-  overflow-x: hidden; }
+  min-height: 40px;
+  min-width: 50px;
+  position: relative; }
   .navbar-brand .full-logo {
-    transition: display 1000ms; }
+    opacity: 1;
+    transition: opacity 500ms;
+    width: 100%; }
+    .navbar-brand .full-logo.d-block {
+      opacity: 1; }
+  .navbar-brand .full-logo.hide {
+    opacity: 0;
+    transition: opacity 1000ms; }
+    .navbar-brand .full-logo.hide + .medium-logo {
+      position: absolute;
+      top: 0;
+      left: 0; }
+  .navbar-brand .medium-logo {
+    width: 100%;
+    transition: width 100ms; }
   .navbar-brand .mini-logo {
     width: 45px;
-    transition: display 1000ms; }
+    transition: display 500ms; }
     @media (min-width: 2220px) {
       .navbar-brand .mini-logo {
         width: 100%; } }
@@ -313,33 +324,29 @@ header {
     .social-media .nav-item .icon {
       font-size: 38px; } }
   @media (min-width: 1920px) and (max-width: 2219.98px) {
-    .social-media .nav-item {
-      margin-top: 25%; }
-      .social-media .nav-item .icon {
-        font-size: 38px; } }
+    .social-media .nav-item .icon {
+      font-size: 38px; } }
   @media (min-width: 2220px) {
-    .social-media .nav-item {
-      margin-top: 25%; }
-      .social-media .nav-item .icon {
-        font-size: 2vw; } }
+    .social-media .nav-item .icon {
+      font-size: 2vw; } }
 
 .menu {
   display: inline-block;
-  margin-top: -14px; }
+  margin-top: -9px; }
   .menu .nav-item {
+    font-family: 'Segoe UI';
+    font-weight: 500;
     text-transform: uppercase;
     position: relative;
-    border: 1px solid transparent; }
+    transition: font-weight 200ms; }
     .menu .nav-item .nav-link {
       color: #353534;
       font-size: 1em;
-      letter-spacing: 0.1px;
       padding: 8px 20px; }
       @media (min-width: 1920px) and (max-width: 2219.98px) {
         .menu .nav-item .nav-link {
           font-size: 16px;
-          padding: 14px 20px;
-          letter-spacing: 0.3px; } }
+          padding: 14px 20px; } }
       @media (min-width: 2220px) {
         .menu .nav-item .nav-link {
           font-size: 1vw;
@@ -347,7 +354,8 @@ header {
       .menu .nav-item .nav-link:hover + .dropdown-menu {
         display: block; }
     .menu .nav-item.portfolio-btn {
-      background: #353534; }
+      background: #353534;
+      transition: background 500ms; }
       .menu .nav-item.portfolio-btn .nav-link {
         color: #fff; }
         .menu .nav-item.portfolio-btn .nav-link:hover {
@@ -355,11 +363,10 @@ header {
       .menu .nav-item.portfolio-btn:hover {
         background: transparent; }
     .menu .nav-item:hover {
-      font-family: 'Segoe UI';
-      font-weight: bolder; }
+      font-weight: 600; }
       .menu .nav-item:hover.active .nav-link {
         border: 1px solid #353534;
-        font-weight: bolder; }
+        font-weight: 600; }
     .menu .nav-item .dropdown-menu {
       text-transform: none;
       background: rgba(0, 0, 0, 0.7);
