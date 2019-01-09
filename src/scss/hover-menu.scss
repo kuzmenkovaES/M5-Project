@@ -46,34 +46,35 @@ header .menu .nav{
   position: relative;
 }
 
-.menu-circle .shadow-light {
-  position: absolute;
-  display: block;
-  content: "";
+.main-box.menu-circle-box {
+  position: relative;
+  overflow: hidden;
 
-  z-index: 1;
-  width: 0;
-  height: 0;
-  top: 0;
+  .title,
+  .menu-circle-text,
+  rounded-circle-item.light {
+    z-index: 10;
+  }
+  .shadow-light {
+    position: absolute;
+    display: block;
+    content: "";
 
-  border-radius: 100%;
-  transition: background 100ms;
-  margin-top: 0!important;
+    z-index: 0;
+    width: 0;
+    height: 0;
+    top: 0;
+
+    border-radius: 100%;
+    background: radial-gradient(circle at center, rgba(255,255,255, 0.2) 0%, rgba(255,255,255, 0) 70%);
+    margin-top: 0!important;
+  }
 }
 
-.light:hover .shadow-light,
-.menu-circle-item:hover .shadow-light {
-  background: rgba(#fff, 0.1);
-}
-
-.shadow-light-half-right {
-  background: radial-gradient(circle at 0%, #353534 50%, rgba(255,255,255, 0.15) 95%);
-  transition: background 400ms;
-}
-
-.shadow-light-half-left {
-  background: radial-gradient(circle at 100%, #353534 50%, rgba(255,255,255, 0.15) 95%);
-  transition: background 400ms;
+#menu-circle {
+  width: 100%;
+  height: 100%;
+  position:absolute;
 }
 
 // Variable Setup

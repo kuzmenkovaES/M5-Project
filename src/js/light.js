@@ -2,57 +2,65 @@
 (function reload() {
     //this is a sample flashlight effect
 
-    const ELEMENTS = document.querySelectorAll(".menu-circle-item");
-    const ELEMENTS_SPAN = [];
-    let heightNavLink;
-    let widthNavLink;
+    let ELEMENTS = document.querySelectorAll(".rounded-circle-item.light");
+    let ELEMENTS_PARENT = document.querySelectorAll(".menu-circle-box");
+    const ELEMENTS_LIGHT = document.querySelector(".shadow-light");
 
-    ELEMENTS.forEach((element, index) => {
-        const childElemennt = element.querySelectorAll(".rounded-circle-item.text");
+    let rectangleHeight = ELEMENTS_PARENT[0].clientHeight;
+    let rectangleWidth = ELEMENTS_PARENT[0].clientWidth;
 
-        if(childElemennt[0]) {
-            heightNavLink = childElemennt[0].offsetHeight;
-            widthNavLink = childElemennt[0].offsetWidth;
+    let s = Snap('#menu-circle');
 
-            window.addEventListener('resize', () => {
-                heightNavLink = childElemennt[0].offsetWidth;
-                widthNavLink = childElemennt[0].offsetWidth;
-                ELEMENTS_SPAN[index].style.height = `${heightNavLink}px`;
-                ELEMENTS_SPAN[index].style.width = `${widthNavLink}px`;
-            });
+    console.log(ELEMENTS_PARENT)
 
-            if (!ELEMENTS_SPAN[index]){
-                ELEMENTS_SPAN[index] = element.querySelector(".shadow-light");
-                ELEMENTS_SPAN[index].style.height = `${heightNavLink}px`;
-                ELEMENTS_SPAN[index].style.width = `${widthNavLink}px`;
-            }
+    window.addEventListener('resize', () => {
+        ELEMENTS = document.querySelectorAll(".rounded-circle-item.light");
+        ELEMENTS_PARENT = document.querySelectorAll(".menu-circle-box");
 
-            element.addEventListener("mousemove", event => {
-                let left = event.offsetX - widthNavLink/4;
-                ELEMENTS_SPAN[ index ].style.left = `${0}px`;
+        rectangleHeight = ELEMENTS_PARENT[0].clientHeight;
+        rectangleWidth = ELEMENTS_PARENT[0].clientWidth;
 
-                if (ELEMENTS_SPAN[ index - 1 ]) {
-                    ELEMENTS_SPAN[ index - 1 ].classList.add("shadow-light-half-right");
-                    ELEMENTS_SPAN[ index - 1 ].style.left = `${left+10}px`;
-                }
-
-                if (ELEMENTS_SPAN[ index + 1 ]) {
-                    ELEMENTS_SPAN[ index + 1 ].classList.add("shadow-light-half-left");
-                    ELEMENTS_SPAN[ index + 1 ].style.left = `${left+10}px`;
-                }
-            });
-
-            element.addEventListener("mouseout", event => {
-                if (ELEMENTS_SPAN[ index - 1 ]) {
-                    ELEMENTS_SPAN[ index - 1 ].classList.remove("shadow-light-half-right")
-                }
-
-                if (ELEMENTS_SPAN[ index + 1 ]) {
-                    ELEMENTS_SPAN[ index + 1 ].classList.remove("shadow-light-half-left");
-                }
-            });
-        }
+        searchForPanelSize(s);
     });
+
+    searchForPanelSize(s);
+
+
+    function searchForPanelSize(s) {
+        s = Snap('#menu-circle');
+        let group = s.group();
+
+        let rectangle = s.rect(0, 0, rectangleWidth, rectangleHeight, 0, 0).attr({'fill':'rgb(53, 53, 52)', 'stroke':'rgb(53, 53, 52)'});
+        group.append(s.rect(0, 0, rectangleWidth, rectangleHeight, 0, 0).attr({ fill: 'white'}));
+
+        rectangle.attr({'mask':group});
+
+        ELEMENTS_PARENT.forEach((elementParent, index) => {
+            console.log(ELEMENTS)
+            ELEMENTS.forEach((element, index) => {
+                const topRound = element.offsetParent.offsetTop+98;
+                const leftRound = element.offsetParent.offsetLeft+120;
+
+                const roundItemLightWidth = element.clientWidth;
+                const roundItemLightHeight = element.clientHeight;
+                const radius = roundItemLightWidth/1.98;
+
+                s.circle(leftRound, topRound, radius).attr({'fill':'black', 'stroke':'rgb(53, 53, 52)'}).appendTo(group);
+
+                ELEMENTS_LIGHT.style.height = `${2*roundItemLightHeight}px`;
+                ELEMENTS_LIGHT.style.width = `${2*roundItemLightWidth}px`;
+
+                elementParent.addEventListener("mousemove", event => {
+                    $('.shadow-light').css({
+                        "top": event.pageY - (4*roundItemLightHeight),
+                        "left": event.pageX - (roundItemLightWidth)
+                    })
+                });
+
+            });
+        });
+    }
+
 
     $('.navbar-toggler').on('click',() => {
         $('.mobile-menu-items').toggleClass('open');

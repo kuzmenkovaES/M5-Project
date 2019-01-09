@@ -1536,7 +1536,7 @@ header {
 }
 
 .line-gradient {
-    height: 1.1px;
+    height: 1.5px;
     background: linear-gradient(to right, $main-color-second 17%, rgba($main-color-first, 0.2));
 }
 
@@ -1587,9 +1587,7 @@ header {
 
             img {
                 width: 100%;
-                @media (max-width: 2220px) {
-                  max-height: 428px;
-                }
+                max-height: 350px;
             }
 
             .caption-project-text {
@@ -1734,10 +1732,10 @@ header {
 
         @media (min-width: 1560px) and (max-width: 1919.98px) {
             .project-slide-item {
-                height: 352px;
+                height: 350px;
 
                 img {
-                    height: 352px;
+                    height: 350px;
                 }
 
                 .caption-project-text {
@@ -1760,10 +1758,10 @@ header {
 
         @media (min-width: 1920px) and (max-width: 2219.98px) {
             .project-slide-item {
-                height: 428px;
+                height: 350px;
 
                 img {
-                    height: 428px;
+                    height: 350px;
                 }
 
                 .caption-project-text {
@@ -2582,8 +2580,8 @@ header {
     @media (min-width: 1198px) and (max-width: 1359.98px) {
         .row-slide-project {
             .project-slide-item {
-                width: 387px;
-                height: 342px;
+                width: 25%;
+                height: 30%;
                 overflow: hidden;
 
                 .caption-project-text {
@@ -2623,8 +2621,8 @@ header {
     @media (min-width: 1360px) and (max-width: 1559.98px) {
         .row-slide-project {
             .project-slide-item {
-                width: 387px;
-                height: 342px;
+                width: 25%;
+                height: 30%;
                 overflow: hidden;
 
                 .caption-project-text {
@@ -2670,8 +2668,8 @@ header {
     @media (min-width: 1560px) and (max-width: 1919.98px) {
         .row-slide-project {
             .project-slide-item {
-                width: 387px;
-                height: 342px;
+                width: 25%;
+                height: 30%;
                 overflow: hidden;
 
                 .caption-project-text {
@@ -2717,8 +2715,8 @@ header {
     @media (min-width: 1920px) {
         .row-slide-project {
             .project-slide-item {
-                width: 387px;
-                height: 342px;
+                width: 25%;
+                height: 30%;
                 overflow: hidden;
 
                 .caption-project-text {

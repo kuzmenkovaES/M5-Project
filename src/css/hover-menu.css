@@ -35,29 +35,29 @@ header .menu .nav {
 .light {
   position: relative; }
 
-.menu-circle .shadow-light {
-  position: absolute;
-  display: block;
-  content: "";
-  z-index: 1;
-  width: 0;
-  height: 0;
-  top: 0;
-  border-radius: 100%;
-  transition: background 100ms;
-  margin-top: 0 !important; }
+.main-box.menu-circle-box {
+  position: relative;
+  overflow: hidden; }
+  .main-box.menu-circle-box .title,
+  .main-box.menu-circle-box .menu-circle-text,
+  .main-box.menu-circle-box rounded-circle-item.light {
+    z-index: 10; }
+  .main-box.menu-circle-box .shadow-light {
+    position: absolute;
+    display: block;
+    content: "";
+    z-index: 0;
+    width: 0;
+    height: 0;
+    top: 0;
+    border-radius: 100%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+    margin-top: 0 !important; }
 
-.light:hover .shadow-light,
-.menu-circle-item:hover .shadow-light {
-  background: rgba(255, 255, 255, 0.1); }
-
-.shadow-light-half-right {
-  background: radial-gradient(circle at 0%, #353534 50%, rgba(255, 255, 255, 0.15) 95%);
-  transition: background 400ms; }
-
-.shadow-light-half-left {
-  background: radial-gradient(circle at 100%, #353534 50%, rgba(255, 255, 255, 0.15) 95%);
-  transition: background 400ms; }
+#menu-circle {
+  width: 100%;
+  height: 100%;
+  position: absolute; }
 
 .mobile-menu-items {
   position: absolute;
