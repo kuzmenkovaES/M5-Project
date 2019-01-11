@@ -38,8 +38,9 @@
         ELEMENTS_PARENT.forEach((elementParent, index) => {
             console.log(ELEMENTS)
             ELEMENTS.forEach((element, index) => {
-                const topRound = element.offsetParent.offsetTop+98;
-                const leftRound = element.offsetParent.offsetLeft+120;
+                console.log(element.getBoundingClientRect())
+                const topRound = element.getBoundingClientRect().bottom - (element.getBoundingClientRect().height/2);
+                const leftRound = element.getBoundingClientRect().right - (element.getBoundingClientRect().width/2);
 
                 const roundItemLightWidth = element.clientWidth;
                 const roundItemLightHeight = element.clientHeight;
@@ -52,10 +53,31 @@
 
                 elementParent.addEventListener("mousemove", event => {
                     $('.shadow-light').css({
-                        "top": event.pageY - (4*roundItemLightHeight),
-                        "left": event.pageX - (roundItemLightWidth)
+                        "top": event.y - roundItemLightHeight,
+                        "left": event.x - roundItemLightWidth
                     })
                 });
+
+                window.addEventListener('resize', () => {
+                    const topRound = element.getBoundingClientRect().bottom - (element.getBoundingClientRect().height/2);
+                    const leftRound = element.getBoundingClientRect().right - (element.getBoundingClientRect().width/2);
+
+                    const roundItemLightWidth = element.clientWidth;
+                    const roundItemLightHeight = element.clientHeight;
+                    const radius = roundItemLightWidth/1.98;
+
+                    s.circle(leftRound, topRound, radius).attr({'fill':'black', 'stroke':'rgb(53, 53, 52)'}).appendTo(group);
+
+                    ELEMENTS_LIGHT.style.height = `${2*roundItemLightHeight}px`;
+                    ELEMENTS_LIGHT.style.width = `${2*roundItemLightWidth}px`;
+
+                    elementParent.addEventListener("mousemove", event => {
+                        $('.shadow-light').css({
+                            "top": event.y - roundItemLightHeight,
+                            "left": event.x - roundItemLightWidth
+                        })
+                    });
+                })
 
             });
         });

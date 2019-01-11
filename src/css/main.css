@@ -830,6 +830,10 @@ header {
 .navbar-toggler-icon {
   font-size: 23px; }
 
+@media (max-width: 2500px) {
+  .menu-circle-box {
+    max-height: 565px; } }
+
 @media (min-width: 1920px) {
   .menu-circle-box .title {
     padding-top: 10px; } }
@@ -1042,7 +1046,7 @@ header {
           left: -8px; } }
   @media (min-width: 1560px) and (max-width: 1919.98px) {
     .menu-circle {
-      height: 525px; }
+      height: 425px; }
       .menu-circle .menu-circle-item {
         position: relative; }
         .menu-circle .menu-circle-item .menu-circle-text {
@@ -1086,7 +1090,7 @@ header {
           left: -8px; } }
   @media (min-width: 1920px) {
     .menu-circle {
-      height: 626px; }
+      height: 461px; }
       .menu-circle .menu-circle-item {
         position: relative; }
         .menu-circle .menu-circle-item .menu-circle-text {
@@ -1295,46 +1299,25 @@ header {
 .coordinates.d-md-block .carousel-caption {
   background: rgba(0, 0, 0, 0.3); }
 
+.coordinates .title {
+  margin-bottom: 0 !important;
+  padding-bottom: 0; }
+
 @media (max-width: 1097.98px) {
   .coordinates {
-    padding: 47px 0 0 0; }
-    .coordinates .carousel-title {
-      letter-spacing: 1px;
-      margin-bottom: 6px; } }
-
-@media (min-width: 1098px) and (max-width: 1197.98px) {
-  .coordinates .carousel-title {
-    margin-bottom: 6px; } }
-
-@media (min-width: 1198px) and (max-width: 1297.98px) {
-  .coordinates .carousel-title {
-    letter-spacing: 0;
-    margin-bottom: 6px; } }
-
-@media (min-width: 1298px) and (max-width: 1397.98px) {
-  .coordinates .carousel-title {
-    letter-spacing: 0;
-    margin-bottom: 10px; } }
+    padding: 47px 0 0 0; } }
 
 @media (min-width: 1398px) and (max-width: 1559.98px) {
   .coordinates {
-    padding-top: 15px; }
-    .coordinates .carousel-title {
-      margin-bottom: 12px; } }
+    padding-top: 15px; } }
 
 @media (min-width: 1560px) and (max-width: 1919.98px) {
   .coordinates {
-    padding-top: 15px; }
-    .coordinates .carousel-title {
-      letter-spacing: 1px;
-      margin-bottom: 12px; } }
+    padding-top: 15px; } }
 
 @media (min-width: 1920px) {
   .coordinates {
-    padding: 47px 0 0 0; }
-    .coordinates .carousel-title {
-      letter-spacing: 1px;
-      margin-bottom: 12px; } }
+    padding: 47px 0 0 0; } }
 
 .contact-box {
   position: relative; }
@@ -1390,7 +1373,6 @@ header {
         font-size: 27px; } }
   @media (min-width: 1198px) and (max-width: 1297.98px) {
     .contact-box .contact {
-      height: 314px;
       padding: 19px 30px; }
       .contact-box .contact p {
         margin: 0;
